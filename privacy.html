@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité — MICI Tracker</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #F7F4EF;
+      color: #1A1A2E;
+      padding: 40px 20px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 48px; }
+    .logo { font-size: 48px; margin-bottom: 12px; }
+    h1 { font-size: 28px; font-weight: 700; color: #2D6A4F; margin-bottom: 8px; }
+    .date { font-size: 13px; color: #6B7280; }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2D6A4F;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #D8F3DC;
+    }
+    p { font-size: 15px; line-height: 1.7; color: #1A1A2E; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 15px; line-height: 1.7; color: #1A1A2E; margin-bottom: 6px; }
+    a { color: #2D6A4F; }
+    .highlight {
+      background: #D8F3DC;
+      border-left: 4px solid #2D6A4F;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    footer { text-align: center; margin-top: 40px; font-size: 13px; color: #6B7280; }
+    .back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: #6B7280; text-decoration: none; }
+    .back-link:hover { color: #2D6A4F; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back-link">← Retour</a>
+    <header>
+      <div class="logo">🌿</div>
+      <h1>Politique de confidentialité</h1>
+      <p class="date">Dernière mise à jour : 1er mai 2026</p>
+    </header>
+
+    <div class="card">
+      <h2>1. Qui sommes-nous ?</h2>
+      <p>MICI Tracker est une application mobile de journal de santé destinée aux patients atteints de maladies inflammatoires chroniques de l'intestin (MICI : maladie de Crohn et rectocolite hémorragique).</p>
+      <p>Responsable du traitement : <strong>Nicolas MA</strong><br/>
+      Contact : <a href="mailto:contact@micitracker.com">contact@micitracker.com</a></p>
+    </div>
+
+    <div class="card">
+      <h2>2. Données collectées</h2>
+      <div class="highlight">
+        Les données de santé sont des données sensibles au sens de l'Article 9 du RGPD. Elles ne sont utilisées qu'à des fins de suivi personnel et ne sont jamais vendues ni partagées avec des tiers.
+      </div>
+      <p>Nous collectons uniquement les données que vous saisissez :</p>
+      <ul>
+        <li><strong>Compte</strong> : adresse email et mot de passe (authentification)</li>
+        <li><strong>Journal des selles</strong> : date, heure, échelle de Bristol, présence de sang, fatigue, notes</li>
+        <li><strong>Journal alimentaire</strong> : date, heure, aliments consommés, tolérance, notes</li>
+        <li><strong>Médicaments</strong> : nom, dosage, fréquence, dates de traitement</li>
+        <li><strong>Profil médical</strong> : type de MICI, statut (rémission/poussée), date de diagnostic, informations sur votre médecin</li>
+        <li><strong>Notifications</strong> : heures de rappel configurées</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. Finalités du traitement</h2>
+      <p>Vos données sont utilisées exclusivement pour :</p>
+      <ul>
+        <li>Vous permettre de suivre l'évolution de votre maladie au quotidien</li>
+        <li>Afficher des statistiques et visualisations pour préparer vos consultations</li>
+        <li>Synchroniser vos données entre vos appareils</li>
+        <li>Vous envoyer des notifications de rappel (si activées)</li>
+      </ul>
+      <p>Base légale : consentement explicite (Article 9 §2 a) du RGPD).</p>
+    </div>
+
+    <div class="card">
+      <h2>4. Hébergement et transfert des données</h2>
+      <p>Vos données sont hébergées par <strong>Supabase</strong> (PostgreSQL) sur des serveurs situés en <strong>Europe (eu-west-1)</strong>, conformément au RGPD.</p>
+      <p>Aucune donnée n'est transférée hors de l'Union européenne.</p>
+      <p>Les données sont également stockées localement sur votre appareil (base SQLite) pour un accès hors ligne.</p>
+    </div>
+
+    <div class="card">
+      <h2>5. Durée de conservation</h2>
+      <p>Vos données sont conservées tant que votre compte est actif. En cas de suppression de votre compte, toutes vos données (compte, journal, profil) sont définitivement supprimées dans un délai de 30 jours.</p>
+    </div>
+
+    <div class="card">
+      <h2>6. Vos droits</h2>
+      <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+      <ul>
+        <li><strong>Droit d'accès</strong> : obtenir une copie de vos données</li>
+        <li><strong>Droit de rectification</strong> : corriger vos données</li>
+        <li><strong>Droit à l'effacement</strong> : supprimer votre compte et toutes vos données depuis l'application (Profil → Supprimer mon compte)</li>
+        <li><strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré</li>
+        <li><strong>Droit d'opposition</strong> : vous opposer à un traitement</li>
+      </ul>
+      <p>Pour exercer vos droits, contactez-nous à : <a href="mailto:contact@micitracker.com">contact@micitracker.com</a></p>
+      <p>Vous pouvez également introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank">CNIL</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2>7. Sécurité</h2>
+      <p>Nous mettons en œuvre les mesures suivantes pour protéger vos données :</p>
+      <ul>
+        <li>Authentification sécurisée (email/mot de passe, OAuth Google)</li>
+        <li>Isolation des données par utilisateur (Row Level Security Supabase)</li>
+        <li>Communications chiffrées (HTTPS/TLS)</li>
+        <li>Suppression définitive des données à la fermeture du compte</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>8. Contact</h2>
+      <p>Pour toute question relative à cette politique ou à vos données personnelles :</p>
+      <p><strong>Nicolas MA</strong><br/>
+      <a href="mailto:contact@micitracker.com">contact@micitracker.com</a></p>
+    </div>
+
+    <footer>© 2026 MICI Tracker — Nicolas MA</footer>
+  </div>
+</body>
+</html>
