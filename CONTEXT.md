@@ -18,3 +18,6 @@
 ### À explorer
 - [ ] Page CGU (Conditions Générales d'Utilisation)
 - [ ] Page mentions légales
+- [ ] Page de présentation — Nicolas MA, histoire du projet, pourquoi MICI Tracker
+- [ ] Page partenaires — ACCU, AFA, associations MICI
+- [ ] Version web de l'app (consultation des données depuis un navigateur) — projet à part entière
