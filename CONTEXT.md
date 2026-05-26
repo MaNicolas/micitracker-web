@@ -1,19 +1,22 @@
 # MICI Tracker Web — Contexte & Backlog
 
 ## Stack actuelle
-- Site statique HTML/CSS/JS hébergé sur GitHub Pages
-- Domaine : micitracker.com (DNS Cloudflare)
-- Déploiement automatique à chaque push sur `main`
+- **Framework** : Astro 6 (static output)
+- **Hébergement** : GitHub Pages
+- **Domaine** : micitracker.com (DNS Cloudflare)
+- **Déploiement** : GitHub Actions automatique à chaque push sur `main`
+- **i18n** : FR / ES / CA via `data-lang` + localStorage (côté client)
+- **Layout** : sidebar fixe partagée sur toutes les pages (`src/layouts/Layout.astro`)
+- **Node** : 22 (`.nvmrc`)
 
 ## Pages
-- `/` — Page d'accueil
-- `/privacy` — Politique de confidentialité (FR / ES / CA)
+- `/` — Page d'accueil (`src/pages/index.astro`)
+- `/privacy` — Politique de confidentialité (`src/pages/privacy.astro`)
 
 ## Backlog
 
 ### Priorité haute
-- [ ] Système i18n moderne (ex: Next.js + next-intl, ou Astro) pour remplacer le système FR/ES/CA manuel actuel
-- [ ] Sidebar fixe persistante sur toutes les pages (inspirée TUI) : logo en haut, liens de navigation, sélecteur de langue en bas. Nécessite un layout partagé → à coupler avec la migration vers un framework (Astro/Next.js) pour éviter de dupliquer le HTML dans chaque page.
+- [ ] Migrer l'i18n vers un système fichiers de traduction (ex: `src/i18n/fr.ts`, `es.ts`, `ca.ts`) pour séparer le contenu du markup
 
 ### À explorer
 - [ ] Page CGU (Conditions Générales d'Utilisation)
