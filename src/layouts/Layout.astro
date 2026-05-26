@@ -164,7 +164,7 @@ const { title } = Astro.props;
 
     <div class="sidebar-footer">
       <div class="footer-label" id="footer-label">Langue</div>
-      <select class="lang-select" id="lang-select" onchange="setLang(this.value)">
+      <select class="lang-select" id="lang-select">
         <option value="fr">Français</option>
         <option value="es">Español</option>
         <option value="ca">Català</option>
@@ -228,7 +228,10 @@ const { title } = Astro.props;
     // Restore language
     const saved = localStorage.getItem('lang') || 'fr';
     const select = document.getElementById('lang-select') as HTMLSelectElement;
-    if (select) select.value = saved;
+    if (select) {
+      select.value = saved;
+      select.addEventListener('change', (e) => setLang((e.target as HTMLSelectElement).value));
+    }
     setLang(saved);
   </script>
 </body>
