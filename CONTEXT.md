@@ -5,7 +5,7 @@
 - **Hébergement** : GitHub Pages
 - **Domaine** : micitracker.com (DNS Cloudflare)
 - **Déploiement** : GitHub Actions automatique à chaque push sur `main`
-- **i18n** : FR / ES / CA via `data-lang` + localStorage (côté client)
+- **i18n** : FR / EN / ES / CA via fichiers `src/i18n/{lang}.ts` + `data-i18n` + localStorage (côté client)
 - **Layout** : sidebar fixe partagée sur toutes les pages (`src/layouts/Layout.astro`)
 - **Node** : 22 (`.nvmrc`)
 
@@ -13,10 +13,12 @@
 - `/` — Page d'accueil (`src/pages/index.astro`)
 - `/privacy` — Politique de confidentialité (`src/pages/privacy.astro`)
 
-## Backlog
+## Ajouter une langue
+1. Créer `src/i18n/xx.ts` (copier `fr.ts` et traduire)
+2. L'importer dans `src/i18n/index.ts`
+3. Ajouter l'option dans le `<select>` de `Layout.astro`
 
-### Priorité haute
-- [ ] Migrer l'i18n vers un système fichiers de traduction (ex: `src/i18n/fr.ts`, `es.ts`, `ca.ts`) pour séparer le contenu du markup
+## Backlog
 
 ### À explorer
 - [ ] Page CGU (Conditions Générales d'Utilisation)
