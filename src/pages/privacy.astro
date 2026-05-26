@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { t } from '../i18n/index';
 ---
 
 <Layout title="Confidentialité">
@@ -45,309 +46,89 @@ import Layout from '../layouts/Layout.astro';
     }
   </style>
 
-  <h1>
-    <span data-lang="fr" class="visible">Politique de confidentialité</span>
-    <span data-lang="en">Privacy policy</span>
-    <span data-lang="es">Política de privacidad</span>
-    <span data-lang="ca">Política de privacitat</span>
-  </h1>
-  <p class="date">
-    <span data-lang="fr" class="visible">Dernière mise à jour : 26 mai 2026</span>
-    <span data-lang="en">Last updated: 26 May 2026</span>
-    <span data-lang="es">Última actualización: 26 de mayo de 2026</span>
-    <span data-lang="ca">Darrera actualització: 26 de maig de 2026</span>
-  </p>
+  <h1 data-i18n="privacy.title">{t('fr', 'privacy.title')}</h1>
+  <p class="date" data-i18n="privacy.date">{t('fr', 'privacy.date')}</p>
 
   <!-- Section 1 -->
   <div class="card">
-    <h2>
-      <span data-lang="fr" class="visible">1. Qui sommes-nous ?</span>
-      <span data-lang="en">1. Who are we?</span>
-      <span data-lang="es">1. ¿Quiénes somos?</span>
-      <span data-lang="ca">1. Qui som?</span>
-    </h2>
-    <p>
-      <span data-lang="fr" class="visible">MICI Tracker est une application mobile de journal de santé destinée aux patients atteints de Maladies Inflammatoires Chroniques de l'Intestin (ou MICI) telles que la maladie de Crohn ou la Rectocolite Hémorragique.</span>
-      <span data-lang="en">MICI Tracker is a mobile health journal app designed for patients with Inflammatory Bowel Disease (IBD), such as Crohn's disease or Ulcerative Colitis.</span>
-      <span data-lang="es">MICI Tracker es una aplicación móvil de diario de salud destinada a pacientes con Enfermedades Inflamatorias Crónicas del Intestino (EII), como la enfermedad de Crohn o la Colitis Ulcerosa.</span>
-      <span data-lang="ca">MICI Tracker és una aplicació mòbil de diari de salut destinada a pacients amb malaltia inflamatòria intestinal (MII), com la malaltia de Crohn o la Colitis Ulcerosa.</span>
-    </p>
-    <p>
-      <span data-lang="fr" class="visible">Responsable du traitement : <strong>Nicolas MA</strong><br/>Contact : <a href="mailto:contact@micitracker.com">contact@micitracker.com</a></span>
-      <span data-lang="en">Data controller: <strong>Nicolas MA</strong><br/>Contact: <a href="mailto:contact@micitracker.com">contact@micitracker.com</a></span>
-      <span data-lang="es">Responsable del tratamiento: <strong>Nicolas MA</strong><br/>Contacto: <a href="mailto:contact@micitracker.com">contact@micitracker.com</a></span>
-      <span data-lang="ca">Responsable del tractament: <strong>Nicolas MA</strong><br/>Contacte: <a href="mailto:contact@micitracker.com">contact@micitracker.com</a></span>
-    </p>
+    <h2 data-i18n="privacy.s1.title">{t('fr', 'privacy.s1.title')}</h2>
+    <p data-i18n="privacy.s1.p1" set:html={t('fr', 'privacy.s1.p1')} />
+    <p data-i18n="privacy.s1.p2" set:html={t('fr', 'privacy.s1.p2')} />
   </div>
 
   <!-- Section 2 -->
   <div class="card">
-    <h2>
-      <span data-lang="fr" class="visible">2. Données collectées</span>
-      <span data-lang="en">2. Data collected</span>
-      <span data-lang="es">2. Datos recopilados</span>
-      <span data-lang="ca">2. Dades recollides</span>
-    </h2>
-    <div class="highlight">
-      <span data-lang="fr" class="visible">Les données de santé sont des données sensibles au sens de l'Article 9 du RGPD. Elles ne sont utilisées qu'à des fins de suivi personnel et ne sont jamais vendues ni partagées avec des tiers.</span>
-      <span data-lang="en">Health data is sensitive data within the meaning of Article 9 of the GDPR. It is used solely for personal tracking purposes and is never sold or shared with third parties.</span>
-      <span data-lang="es">Los datos de salud son datos sensibles en el sentido del Artículo 9 del RGPD. Solo se utilizan para el seguimiento personal y nunca se venden ni se comparten con terceros.</span>
-      <span data-lang="ca">Les dades de salut són dades sensibles en el sentit de l'Article 9 del RGPD. Només s'utilitzen per al seguiment personal i mai no es venen ni es comparteixen amb tercers.</span>
-    </div>
-    <p>
-      <span data-lang="fr" class="visible">Nous collectons uniquement les données que vous saisissez :</span>
-      <span data-lang="en">We only collect the data you enter:</span>
-      <span data-lang="es">Solo recopilamos los datos que usted introduce:</span>
-      <span data-lang="ca">Només recollim les dades que vostè introdueix:</span>
-    </p>
+    <h2 data-i18n="privacy.s2.title">{t('fr', 'privacy.s2.title')}</h2>
+    <div class="highlight" data-i18n="privacy.s2.highlight">{t('fr', 'privacy.s2.highlight')}</div>
+    <p data-i18n="privacy.s2.intro">{t('fr', 'privacy.s2.intro')}</p>
     <ul>
-      <li>
-        <span data-lang="fr" class="visible"><strong>Compte</strong> : adresse email et mot de passe (authentification)</span>
-        <span data-lang="en"><strong>Account</strong>: email address and password (authentication)</span>
-        <span data-lang="es"><strong>Cuenta</strong>: dirección de correo electrónico y contraseña (autenticación)</span>
-        <span data-lang="ca"><strong>Compte</strong>: adreça de correu electrònic i contrasenya (autenticació)</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible"><strong>Journal des selles</strong> : date, heure, échelle de Bristol, présence de sang, glaires, fatigue, notes</span>
-        <span data-lang="en"><strong>Bowel movement journal</strong>: date, time, Bristol scale, presence of blood, mucus, fatigue, notes</span>
-        <span data-lang="es"><strong>Diario de deposiciones</strong>: fecha, hora, escala de Bristol, presencia de sangre, mucosidades, fatiga, notas</span>
-        <span data-lang="ca"><strong>Diari de deposicions</strong>: data, hora, escala de Bristol, presència de sang, mucositats, fatiga, notes</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible"><strong>Journal alimentaire</strong> : date, heure, aliments consommés, tolérance, notes</span>
-        <span data-lang="en"><strong>Food diary</strong>: date, time, foods consumed, tolerance, notes</span>
-        <span data-lang="es"><strong>Diario alimentario</strong>: fecha, hora, alimentos consumidos, tolerancia, notas</span>
-        <span data-lang="ca"><strong>Diari alimentari</strong>: data, hora, aliments consumits, tolerància, notes</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible"><strong>Médicaments</strong> : nom, dosage, fréquence, dates de traitement</span>
-        <span data-lang="en"><strong>Medications</strong>: name, dosage, frequency, treatment dates</span>
-        <span data-lang="es"><strong>Medicamentos</strong>: nombre, dosis, frecuencia, fechas de tratamiento</span>
-        <span data-lang="ca"><strong>Medicaments</strong>: nom, dosi, freqüència, dates de tractament</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible"><strong>Profil médical</strong> : type de MICI, statut (rémission/poussée), date de diagnostic, informations sur votre médecin</span>
-        <span data-lang="en"><strong>Medical profile</strong>: type of IBD, status (remission/flare), diagnosis date, information about your doctor</span>
-        <span data-lang="es"><strong>Perfil médico</strong>: tipo de EII, estado (remisión/brote), fecha de diagnóstico, información sobre su médico</span>
-        <span data-lang="ca"><strong>Perfil mèdic</strong>: tipus de MII, estat (remissió/brot), data de diagnòstic, informació sobre el seu metge</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible"><strong>Notifications</strong> : heures de rappel configurées</span>
-        <span data-lang="en"><strong>Notifications</strong>: configured reminder times</span>
-        <span data-lang="es"><strong>Notificaciones</strong>: horas de recordatorio configuradas</span>
-        <span data-lang="ca"><strong>Notificacions</strong>: hores de recordatori configurades</span>
-      </li>
+      <li data-i18n="privacy.s2.account" set:html={t('fr', 'privacy.s2.account')} />
+      <li data-i18n="privacy.s2.stool" set:html={t('fr', 'privacy.s2.stool')} />
+      <li data-i18n="privacy.s2.food" set:html={t('fr', 'privacy.s2.food')} />
+      <li data-i18n="privacy.s2.meds" set:html={t('fr', 'privacy.s2.meds')} />
+      <li data-i18n="privacy.s2.profile" set:html={t('fr', 'privacy.s2.profile')} />
+      <li data-i18n="privacy.s2.notifs" set:html={t('fr', 'privacy.s2.notifs')} />
     </ul>
   </div>
 
   <!-- Section 3 -->
   <div class="card">
-    <h2>
-      <span data-lang="fr" class="visible">3. Finalités du traitement</span>
-      <span data-lang="en">3. Purpose of processing</span>
-      <span data-lang="es">3. Finalidades del tratamiento</span>
-      <span data-lang="ca">3. Finalitats del tractament</span>
-    </h2>
-    <p>
-      <span data-lang="fr" class="visible">Vos données sont utilisées exclusivement pour :</span>
-      <span data-lang="en">Your data is used exclusively to:</span>
-      <span data-lang="es">Sus datos se utilizan exclusivamente para:</span>
-      <span data-lang="ca">Les seves dades s'utilitzen exclusivament per a:</span>
-    </p>
+    <h2 data-i18n="privacy.s3.title">{t('fr', 'privacy.s3.title')}</h2>
+    <p data-i18n="privacy.s3.intro">{t('fr', 'privacy.s3.intro')}</p>
     <ul>
-      <li>
-        <span data-lang="fr" class="visible">Vous permettre de suivre l'évolution de votre maladie au quotidien</span>
-        <span data-lang="en">Allow you to track the progression of your condition on a daily basis</span>
-        <span data-lang="es">Permitirle hacer un seguimiento diario de la evolución de su enfermedad</span>
-        <span data-lang="ca">Permetre-li fer un seguiment diari de l'evolució de la seva malaltia</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible">Afficher des statistiques et visualisations pour préparer vos consultations</span>
-        <span data-lang="en">Display statistics and visualisations to help you prepare for your medical appointments</span>
-        <span data-lang="es">Mostrar estadísticas y visualizaciones para preparar sus consultas médicas</span>
-        <span data-lang="ca">Mostrar estadístiques i visualitzacions per preparar les seves consultes mèdiques</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible">Synchroniser vos données entre vos appareils</span>
-        <span data-lang="en">Synchronise your data across your devices</span>
-        <span data-lang="es">Sincronizar sus datos entre sus dispositivos</span>
-        <span data-lang="ca">Sincronitzar les seves dades entre els seus dispositius</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible">Vous envoyer des notifications de rappel (si activées)</span>
-        <span data-lang="en">Send you reminder notifications (if enabled)</span>
-        <span data-lang="es">Enviarle notificaciones de recordatorio (si están activadas)</span>
-        <span data-lang="ca">Enviar-li notificacions de recordatori (si estan activades)</span>
-      </li>
+      <li data-i18n="privacy.s3.li1">{t('fr', 'privacy.s3.li1')}</li>
+      <li data-i18n="privacy.s3.li2">{t('fr', 'privacy.s3.li2')}</li>
+      <li data-i18n="privacy.s3.li3">{t('fr', 'privacy.s3.li3')}</li>
+      <li data-i18n="privacy.s3.li4">{t('fr', 'privacy.s3.li4')}</li>
     </ul>
-    <p>
-      <span data-lang="fr" class="visible">Base légale : consentement explicite (Article 9 §2 a) du RGPD).</span>
-      <span data-lang="en">Legal basis: explicit consent (Article 9 §2 a) of the GDPR).</span>
-      <span data-lang="es">Base legal: consentimiento explícito (Artículo 9 §2 a) del RGPD).</span>
-      <span data-lang="ca">Base legal: consentiment explícit (Article 9 §2 a) del RGPD).</span>
-    </p>
+    <p data-i18n="privacy.s3.legal">{t('fr', 'privacy.s3.legal')}</p>
   </div>
 
   <!-- Section 4 -->
   <div class="card">
-    <h2>
-      <span data-lang="fr" class="visible">4. Hébergement et transfert des données</span>
-      <span data-lang="en">4. Hosting and data transfer</span>
-      <span data-lang="es">4. Alojamiento y transferencia de datos</span>
-      <span data-lang="ca">4. Allotjament i transferència de dades</span>
-    </h2>
-    <p>
-      <span data-lang="fr" class="visible">Vos données sont hébergées par <strong>Supabase</strong> (PostgreSQL) sur des serveurs situés en <strong>Europe (🇮🇪 Irlande, eu-west-1)</strong>, conformément au RGPD.</span>
-      <span data-lang="en">Your data is hosted by <strong>Supabase</strong> (PostgreSQL) on servers located in <strong>Europe (🇮🇪 Ireland, eu-west-1)</strong>, in compliance with the GDPR.</span>
-      <span data-lang="es">Sus datos están alojados por <strong>Supabase</strong> (PostgreSQL) en servidores situados en <strong>Europa (🇮🇪 Irlanda, eu-west-1)</strong>, de conformidad con el RGPD.</span>
-      <span data-lang="ca">Les seves dades estan allotjades per <strong>Supabase</strong> (PostgreSQL) en servidors situats a <strong>Europa (🇮🇪 Irlanda, eu-west-1)</strong>, de conformitat amb el RGPD.</span>
-    </p>
-    <p>
-      <span data-lang="fr" class="visible">Aucune donnée n'est transférée hors de l'Union européenne.</span>
-      <span data-lang="en">No data is transferred outside the European Union.</span>
-      <span data-lang="es">Ningún dato se transfiere fuera de la Unión Europea.</span>
-      <span data-lang="ca">Cap dada no es transfereix fora de la Unió Europea.</span>
-    </p>
-    <p>
-      <span data-lang="fr" class="visible">Les données sont également stockées localement sur votre appareil (base SQLite) pour un accès hors ligne.</span>
-      <span data-lang="en">Data is also stored locally on your device (SQLite database) for offline access.</span>
-      <span data-lang="es">Los datos también se almacenan localmente en su dispositivo (base de datos SQLite) para el acceso sin conexión.</span>
-      <span data-lang="ca">Les dades també s'emmagatzemen localment al seu dispositiu (base de dades SQLite) per a l'accés sense connexió.</span>
-    </p>
+    <h2 data-i18n="privacy.s4.title">{t('fr', 'privacy.s4.title')}</h2>
+    <p data-i18n="privacy.s4.p1" set:html={t('fr', 'privacy.s4.p1')} />
+    <p data-i18n="privacy.s4.p2">{t('fr', 'privacy.s4.p2')}</p>
+    <p data-i18n="privacy.s4.p3">{t('fr', 'privacy.s4.p3')}</p>
   </div>
 
   <!-- Section 5 -->
   <div class="card">
-    <h2>
-      <span data-lang="fr" class="visible">5. Durée de conservation</span>
-      <span data-lang="en">5. Data retention</span>
-      <span data-lang="es">5. Período de conservación</span>
-      <span data-lang="ca">5. Període de conservació</span>
-    </h2>
-    <p>
-      <span data-lang="fr" class="visible">Vos données sont conservées tant que votre compte est actif. En cas de suppression de votre compte, toutes vos données (compte, journal, profil) sont définitivement supprimées dans un délai de 30 jours.</span>
-      <span data-lang="en">Your data is retained for as long as your account is active. If you delete your account, all your data (account, journal, profile) is permanently deleted within 30 days.</span>
-      <span data-lang="es">Sus datos se conservan mientras su cuenta esté activa. En caso de eliminación de su cuenta, todos sus datos (cuenta, diario, perfil) se eliminan definitivamente en un plazo de 30 días.</span>
-      <span data-lang="ca">Les seves dades es conserven mentre el seu compte estigui actiu. En cas d'eliminació del compte, totes les seves dades (compte, diari, perfil) s'eliminen definitivament en un termini de 30 dies.</span>
-    </p>
+    <h2 data-i18n="privacy.s5.title">{t('fr', 'privacy.s5.title')}</h2>
+    <p data-i18n="privacy.s5.p1">{t('fr', 'privacy.s5.p1')}</p>
   </div>
 
   <!-- Section 6 -->
   <div class="card">
-    <h2>
-      <span data-lang="fr" class="visible">6. Vos droits</span>
-      <span data-lang="en">6. Your rights</span>
-      <span data-lang="es">6. Sus derechos</span>
-      <span data-lang="ca">6. Els seus drets</span>
-    </h2>
-    <p>
-      <span data-lang="fr" class="visible">Conformément au RGPD, vous disposez des droits suivants :</span>
-      <span data-lang="en">Under the GDPR, you have the following rights:</span>
-      <span data-lang="es">De conformidad con el RGPD, usted dispone de los siguientes derechos:</span>
-      <span data-lang="ca">De conformitat amb el RGPD, vostè disposa dels drets següents:</span>
-    </p>
+    <h2 data-i18n="privacy.s6.title">{t('fr', 'privacy.s6.title')}</h2>
+    <p data-i18n="privacy.s6.intro">{t('fr', 'privacy.s6.intro')}</p>
     <ul>
-      <li>
-        <span data-lang="fr" class="visible"><strong>Droit d'accès</strong> : obtenir une copie de vos données</span>
-        <span data-lang="en"><strong>Right of access</strong>: obtain a copy of your data</span>
-        <span data-lang="es"><strong>Derecho de acceso</strong>: obtener una copia de sus datos</span>
-        <span data-lang="ca"><strong>Dret d'accés</strong>: obtenir una còpia de les seves dades</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible"><strong>Droit de rectification</strong> : corriger vos données</span>
-        <span data-lang="en"><strong>Right to rectification</strong>: correct your data</span>
-        <span data-lang="es"><strong>Derecho de rectificación</strong>: corregir sus datos</span>
-        <span data-lang="ca"><strong>Dret de rectificació</strong>: corregir les seves dades</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible"><strong>Droit à l'effacement</strong> : supprimer votre compte et toutes vos données depuis l'application (Profil → Supprimer mon compte)</span>
-        <span data-lang="en"><strong>Right to erasure</strong>: delete your account and all your data from the app (Profile → Delete my account)</span>
-        <span data-lang="es"><strong>Derecho de supresión</strong>: eliminar su cuenta y todos sus datos desde la aplicación (Perfil → Eliminar mi cuenta)</span>
-        <span data-lang="ca"><strong>Dret de supressió</strong>: eliminar el seu compte i totes les seves dades des de l'aplicació (Perfil → Eliminar el meu compte)</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible"><strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré</span>
-        <span data-lang="en"><strong>Right to data portability</strong>: receive your data in a structured format</span>
-        <span data-lang="es"><strong>Derecho a la portabilidad</strong>: recibir sus datos en un formato estructurado</span>
-        <span data-lang="ca"><strong>Dret a la portabilitat</strong>: rebre les seves dades en un format estructurat</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible"><strong>Droit d'opposition</strong> : vous opposer à un traitement</span>
-        <span data-lang="en"><strong>Right to object</strong>: object to a processing activity</span>
-        <span data-lang="es"><strong>Derecho de oposición</strong>: oponerse a un tratamiento</span>
-        <span data-lang="ca"><strong>Dret d'oposició</strong>: oposar-se a un tractament</span>
-      </li>
+      <li data-i18n="privacy.s6.access" set:html={t('fr', 'privacy.s6.access')} />
+      <li data-i18n="privacy.s6.rectification" set:html={t('fr', 'privacy.s6.rectification')} />
+      <li data-i18n="privacy.s6.erasure" set:html={t('fr', 'privacy.s6.erasure')} />
+      <li data-i18n="privacy.s6.portability" set:html={t('fr', 'privacy.s6.portability')} />
+      <li data-i18n="privacy.s6.opposition" set:html={t('fr', 'privacy.s6.opposition')} />
     </ul>
-    <p>
-      <span data-lang="fr" class="visible">Pour exercer vos droits, contactez-nous à : <a href="mailto:contact@micitracker.com">contact@micitracker.com</a></span>
-      <span data-lang="en">To exercise your rights, contact us at: <a href="mailto:contact@micitracker.com">contact@micitracker.com</a></span>
-      <span data-lang="es">Para ejercer sus derechos, contáctenos en: <a href="mailto:contact@micitracker.com">contact@micitracker.com</a></span>
-      <span data-lang="ca">Per exercir els seus drets, contacti'ns a: <a href="mailto:contact@micitracker.com">contact@micitracker.com</a></span>
-    </p>
-    <p>
-      <span data-lang="fr" class="visible">Vous pouvez également introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank">CNIL</a>.</span>
-      <span data-lang="en">You may also lodge a complaint with the <a href="https://ico.org.uk" target="_blank">ICO</a> (Information Commissioner's Office).</span>
-      <span data-lang="es">También puede presentar una reclamación ante la <a href="https://www.aepd.es" target="_blank">AEPD</a> (Agencia Española de Protección de Datos).</span>
-      <span data-lang="ca">També pot presentar una reclamació davant l'<a href="https://apdcat.gencat.cat" target="_blank">APDCAT</a> (Autoritat Catalana de Protecció de Dades).</span>
-    </p>
+    <p data-i18n="privacy.s6.contact" set:html={t('fr', 'privacy.s6.contact')} />
+    <p data-i18n="privacy.s6.authority" set:html={t('fr', 'privacy.s6.authority')} />
   </div>
 
   <!-- Section 7 -->
   <div class="card">
-    <h2>
-      <span data-lang="fr" class="visible">7. Sécurité</span>
-      <span data-lang="en">7. Security</span>
-      <span data-lang="es">7. Seguridad</span>
-      <span data-lang="ca">7. Seguretat</span>
-    </h2>
-    <p>
-      <span data-lang="fr" class="visible">Nous mettons en œuvre les mesures suivantes pour protéger vos données :</span>
-      <span data-lang="en">We implement the following measures to protect your data:</span>
-      <span data-lang="es">Implementamos las siguientes medidas para proteger sus datos:</span>
-      <span data-lang="ca">Implementem les mesures següents per protegir les seves dades:</span>
-    </p>
+    <h2 data-i18n="privacy.s7.title">{t('fr', 'privacy.s7.title')}</h2>
+    <p data-i18n="privacy.s7.intro">{t('fr', 'privacy.s7.intro')}</p>
     <ul>
-      <li>
-        <span data-lang="fr" class="visible">Authentification sécurisée (email/mot de passe, OAuth Google)</span>
-        <span data-lang="en">Secure authentication (email/password, Google OAuth)</span>
-        <span data-lang="es">Autenticación segura (correo/contraseña, OAuth Google)</span>
-        <span data-lang="ca">Autenticació segura (correu/contrasenya, OAuth Google)</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible">Isolation des données par utilisateur (Row Level Security Supabase)</span>
-        <span data-lang="en">Per-user data isolation (Supabase Row Level Security)</span>
-        <span data-lang="es">Aislamiento de datos por usuario (Row Level Security de Supabase)</span>
-        <span data-lang="ca">Aïllament de dades per usuari (Row Level Security de Supabase)</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible">Communications chiffrées (HTTPS/TLS)</span>
-        <span data-lang="en">Encrypted communications (HTTPS/TLS)</span>
-        <span data-lang="es">Comunicaciones cifradas (HTTPS/TLS)</span>
-        <span data-lang="ca">Comunicacions xifrades (HTTPS/TLS)</span>
-      </li>
-      <li>
-        <span data-lang="fr" class="visible">Suppression définitive des données à la fermeture du compte</span>
-        <span data-lang="en">Permanent deletion of data upon account closure</span>
-        <span data-lang="es">Eliminación definitiva de los datos al cerrar la cuenta</span>
-        <span data-lang="ca">Eliminació definitiva de les dades en tancar el compte</span>
-      </li>
+      <li data-i18n="privacy.s7.li1">{t('fr', 'privacy.s7.li1')}</li>
+      <li data-i18n="privacy.s7.li2">{t('fr', 'privacy.s7.li2')}</li>
+      <li data-i18n="privacy.s7.li3">{t('fr', 'privacy.s7.li3')}</li>
+      <li data-i18n="privacy.s7.li4">{t('fr', 'privacy.s7.li4')}</li>
     </ul>
   </div>
 
   <!-- Section 8 -->
   <div class="card">
-    <h2>
-      <span data-lang="fr" class="visible">8. Contact</span>
-      <span data-lang="en">8. Contact</span>
-      <span data-lang="es">8. Contacto</span>
-      <span data-lang="ca">8. Contacte</span>
-    </h2>
-    <p>
-      <span data-lang="fr" class="visible">Pour toute question relative à cette politique ou à vos données personnelles :</span>
-      <span data-lang="en">For any question regarding this policy or your personal data:</span>
-      <span data-lang="es">Para cualquier pregunta relacionada con esta política o con sus datos personales:</span>
-      <span data-lang="ca">Per a qualsevol pregunta relacionada amb aquesta política o amb les seves dades personals:</span>
-    </p>
+    <h2 data-i18n="privacy.s8.title">{t('fr', 'privacy.s8.title')}</h2>
+    <p data-i18n="privacy.s8.intro">{t('fr', 'privacy.s8.intro')}</p>
     <p>
       <strong>Nicolas MA</strong><br/>
       <a href="mailto:contact@micitracker.com">contact@micitracker.com</a>

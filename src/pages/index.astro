@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { t } from '../i18n/index';
 ---
 
 <Layout title="Accueil">
@@ -45,24 +46,9 @@ import Layout from '../layouts/Layout.astro';
   </style>
 
   <div class="hero">
-    <div class="badge">
-      <span data-lang="fr" class="visible">Application mobile</span>
-      <span data-lang="en">Mobile app</span>
-      <span data-lang="es">Aplicación móvil</span>
-      <span data-lang="ca">Aplicació mòbil</span>
-    </div>
+    <div class="badge" data-i18n="home.badge">{t('fr', 'home.badge')}</div>
     <h1>MICI Tracker</h1>
-    <p>
-      <span data-lang="fr" class="visible">Journal de santé pour les patients atteints de Maladies Inflammatoires Chroniques de l'Intestin.</span>
-      <span data-lang="en">Health journal for patients with Inflammatory Bowel Disease (IBD).</span>
-      <span data-lang="es">Diario de salud para pacientes con Enfermedades Inflamatorias Crónicas del Intestino.</span>
-      <span data-lang="ca">Diari de salut per a pacients amb malaltia inflamatòria intestinal (MII).</span>
-    </p>
-    <a href="/privacy" class="cta">
-      <span data-lang="fr" class="visible">Politique de confidentialité</span>
-      <span data-lang="en">Privacy policy</span>
-      <span data-lang="es">Política de privacidad</span>
-      <span data-lang="ca">Política de privacitat</span>
-    </a>
+    <p data-i18n="home.description">{t('fr', 'home.description')}</p>
+    <a href="/privacy" class="cta" data-i18n="home.cta">{t('fr', 'home.cta')}</a>
   </div>
 </Layout>

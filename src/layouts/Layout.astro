@@ -1,4 +1,6 @@
 ---
+import { translations } from '../i18n/index';
+
 interface Props {
   title: string;
 }
@@ -145,12 +147,9 @@ const { title } = Astro.props;
       body { flex-direction: column; }
       .main { margin-left: 0; padding: 24px 20px; }
     }
-
-    /* Lang visibility */
   </style>
   <style is:global>
-    [data-lang] { display: none; }
-    [data-lang].visible { display: block; }
+    [data-i18n] { }
   </style>
 </head>
 <body>
@@ -158,17 +157,17 @@ const { title } = Astro.props;
     <div class="sidebar-logo">
       <span class="logo-icon">🌿</span>
       <div class="logo-name">MICI Tracker</div>
-      <div class="logo-tagline" id="tagline">Votre journal de santé</div>
+      <div class="logo-tagline" data-i18n="sidebar.tagline">Votre journal de santé</div>
     </div>
 
     <nav class="sidebar-nav">
-      <div class="nav-label" id="nav-label">Navigation</div>
-      <a href="/" class="nav-item" id="nav-home">Accueil</a>
-      <a href="/privacy" class="nav-item" id="nav-privacy">Confidentialité</a>
+      <div class="nav-label" data-i18n="nav.label">Navigation</div>
+      <a href="/" class="nav-item" id="nav-home" data-i18n="nav.home">Accueil</a>
+      <a href="/privacy" class="nav-item" id="nav-privacy" data-i18n="nav.privacy">Confidentialité</a>
     </nav>
 
     <div class="sidebar-footer">
-      <div class="footer-label" id="footer-label">Langue</div>
+      <div class="footer-label" data-i18n="lang.label">Langue</div>
       <select class="lang-select" id="lang-select">
         <option value="fr">Français</option>
         <option value="en">English</option>
@@ -184,49 +183,17 @@ const { title } = Astro.props;
     </div>
   </main>
 
-  <script>
-    const translations: Record<string, Record<string, string>> = {
-      fr: {
-        tagline: 'Votre journal de santé',
-        'nav-label': 'Navigation',
-        'nav-home': 'Accueil',
-        'nav-privacy': 'Confidentialité',
-        'footer-label': 'Langue',
-      },
-      es: {
-        tagline: 'Su diario de salud',
-        'nav-label': 'Navegación',
-        'nav-home': 'Inicio',
-        'nav-privacy': 'Privacidad',
-        'footer-label': 'Idioma',
-      },
-      en: {
-        tagline: 'Your health journal',
-        'nav-label': 'Navigation',
-        'nav-home': 'Home',
-        'nav-privacy': 'Privacy',
-        'footer-label': 'Language',
-      },
-      ca: {
-        tagline: 'El vostre diari de salut',
-        'nav-label': 'Navegació',
-        'nav-home': 'Inici',
-        'nav-privacy': 'Privadesa',
-        'footer-label': 'Idioma',
-      },
-    };
-
-    function setLang(lang: string) {
-      // Update data-lang visibility
-      document.querySelectorAll('[data-lang]').forEach((el) => {
-        (el as HTMLElement).classList.toggle('visible', (el as HTMLElement).dataset.lang === lang);
-      });
-      // Update sidebar labels
+  <script define:vars={{ translations }}>
+    function setLang(lang) {
       const t = translations[lang];
-      Object.keys(t).forEach((id) => {
-        const el = document.getElementById(id);
-        if (el) el.textContent = t[id];
+      if (!t) return;
+
+      // Update all i18n elements
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.dataset.i18n;
+        if (t[key] !== undefined) el.innerHTML = t[key];
       });
+
       document.documentElement.lang = lang;
       localStorage.setItem('lang', lang);
     }
@@ -234,18 +201,15 @@ const { title } = Astro.props;
     // Active nav item
     const path = window.location.pathname;
     document.querySelectorAll('.nav-item').forEach((el) => {
-      const href = el.getAttribute('href');
-      if (href === path || (href === '/' && path === '/')) {
-        el.classList.add('active');
-      }
+      el.classList.toggle('active', el.getAttribute('href') === path);
     });
 
     // Restore language
     const saved = localStorage.getItem('lang') || 'fr';
-    const select = document.getElementById('lang-select') as HTMLSelectElement;
+    const select = document.getElementById('lang-select');
     if (select) {
       select.value = saved;
-      select.addEventListener('change', (e) => setLang((e.target as HTMLSelectElement).value));
+      select.addEventListener('change', (e) => setLang(e.target.value));
     }
     setLang(saved);
   </script>
