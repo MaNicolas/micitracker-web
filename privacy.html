@@ -52,22 +52,21 @@
       display: flex;
       justify-content: flex-end;
       margin-bottom: 16px;
-      gap: 8px;
     }
-    .lang-btn {
-      padding: 6px 16px;
+    .lang-select {
+      appearance: none;
+      padding: 8px 36px 8px 14px;
       border-radius: 20px;
       border: 2px solid #2D6A4F;
-      background: transparent;
+      background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%232D6A4F' d='M6 8L1 3h10z'/%3E%3C/svg%3E") no-repeat right 12px center;
       color: #2D6A4F;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 600;
       cursor: pointer;
-      transition: background 0.2s, color 0.2s;
+      outline: none;
     }
-    .lang-btn.active {
-      background: #2D6A4F;
-      color: #fff;
+    .lang-select:focus {
+      box-shadow: 0 0 0 3px rgba(45,106,79,0.2);
     }
     [data-lang] { display: none; }
     [data-lang].visible { display: block; }
@@ -76,8 +75,10 @@
 <body>
   <div class="container">
     <div class="lang-switcher">
-      <button class="lang-btn active" onclick="setLang('fr')">FR</button>
-      <button class="lang-btn" onclick="setLang('es')">ES</button>
+      <select class="lang-select" onchange="setLang(this.value)">
+        <option value="fr">🇫🇷 Français</option>
+        <option value="es">🇪🇸 Español</option>
+      </select>
     </div>
 
     <a href="/" class="back-link">
@@ -316,9 +317,6 @@
     function setLang(lang) {
       document.querySelectorAll('[data-lang]').forEach(el => {
         el.classList.toggle('visible', el.dataset.lang === lang);
-      });
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.textContent === lang.toUpperCase());
       });
       document.documentElement.lang = lang;
     }
