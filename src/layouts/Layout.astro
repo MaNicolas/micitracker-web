@@ -199,9 +199,10 @@ const { title } = Astro.props;
     }
 
     // Active nav item
-    const path = window.location.pathname;
+    const path = window.location.pathname.replace(/\/$/, '') || '/';
     document.querySelectorAll('.nav-item').forEach((el) => {
-      el.classList.toggle('active', el.getAttribute('href') === path);
+      const href = (el.getAttribute('href') || '').replace(/\/$/, '') || '/';
+      el.classList.toggle('active', href === path);
     });
 
     // Restore language
