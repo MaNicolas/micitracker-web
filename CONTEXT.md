@@ -20,6 +20,9 @@
 
 ## Backlog
 
+### À explorer (nécessite publication sur les stores)
+- [ ] QR code sur la page d'accueil vers le Play Store / App Store — à faire une fois l'app publiée
+
 ### À explorer
 - [ ] Page CGU (Conditions Générales d'Utilisation)
 - [ ] Page mentions légales
