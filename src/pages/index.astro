@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Accueil">
+  <style>
+    .hero {
+      text-align: center;
+      padding: 60px 0 48px;
+    }
+    .hero h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #2D6A4F;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 16px;
+      color: #6B7280;
+      line-height: 1.7;
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+    .badge {
+      display: inline-block;
+      background: #D8F3DC;
+      color: #2D6A4F;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .cta {
+      display: inline-block;
+      background: #2D6A4F;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .cta:hover { background: #245a42; }
+  </style>
+
+  <div class="hero">
+    <div class="badge">
+      <span data-lang="fr" class="visible">Application mobile</span>
+      <span data-lang="es">Aplicación móvil</span>
+      <span data-lang="ca">Aplicació mòbil</span>
+    </div>
+    <h1>MICI Tracker</h1>
+    <p>
+      <span data-lang="fr" class="visible">Journal de santé pour les patients atteints de Maladies Inflammatoires Chroniques de l'Intestin.</span>
+      <span data-lang="es">Diario de salud para pacientes con Enfermedades Inflamatorias Crónicas del Intestino.</span>
+      <span data-lang="ca">Diari de salut per a pacients amb Malalties Inflamatòries Cròniques de l'Intestí.</span>
+    </p>
+    <a href="/privacy" class="cta">
+      <span data-lang="fr" class="visible">Politique de confidentialité</span>
+      <span data-lang="es">Política de privacidad</span>
+      <span data-lang="ca">Política de privacitat</span>
+    </a>
+  </div>
+</Layout>

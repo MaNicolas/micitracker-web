@@ -1,0 +1,233 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" />
+  <title>{title} — MICI Tracker</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #F7F4EF;
+      color: #1A1A2E;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      min-height: 100vh;
+      background: #fff;
+      border-right: 1px solid #E5E7EB;
+      display: flex;
+      flex-direction: column;
+      padding: 32px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+    .sidebar-logo {
+      padding: 0 24px 32px;
+      border-bottom: 1px solid #F3F4F6;
+      text-align: center;
+    }
+    .sidebar-logo .logo-icon {
+      font-size: 32px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .sidebar-logo .logo-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #2D6A4F;
+    }
+    .sidebar-logo .logo-tagline {
+      font-size: 11px;
+      color: #9CA3AF;
+      margin-top: 2px;
+    }
+    .sidebar-nav {
+      flex: 1;
+      padding: 24px 0;
+    }
+    .nav-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: #9CA3AF;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0 24px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .nav-item {
+      display: block;
+      padding: 10px 24px;
+      font-size: 14px;
+      color: #374151;
+      text-decoration: none;
+      border-left: 3px solid transparent;
+      transition: all 0.15s;
+      text-align: center;
+    }
+    .nav-item:hover {
+      background: #F9FAFB;
+      color: #2D6A4F;
+    }
+    .nav-item.active {
+      border-left-color: #2D6A4F;
+      color: #2D6A4F;
+      font-weight: 600;
+      background: #F0FDF4;
+    }
+    .sidebar-footer {
+      padding: 24px;
+      border-top: 1px solid #F3F4F6;
+    }
+    .footer-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: #9CA3AF;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .lang-select {
+      width: 100%;
+      appearance: none;
+      padding: 8px 32px 8px 12px;
+      border-radius: 8px;
+      border: 1px solid #E5E7EB;
+      background: #F9FAFB url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236B7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E") no-repeat right 10px center;
+      color: #374151;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      outline: none;
+    }
+    .lang-select:focus {
+      border-color: #2D6A4F;
+      box-shadow: 0 0 0 3px rgba(45,106,79,0.1);
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 240px;
+      flex: 1;
+      padding: 48px 40px;
+      max-width: 800px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        min-height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #E5E7EB;
+        padding: 20px 0;
+      }
+      body { flex-direction: column; }
+      .main { margin-left: 0; padding: 24px 20px; }
+    }
+
+    /* Lang visibility */
+    [data-lang] { display: none; }
+    [data-lang].visible { display: block; }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-icon">🌿</span>
+      <div class="logo-name">MICI Tracker</div>
+      <div class="logo-tagline" id="tagline">Votre journal de santé</div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-label" id="nav-label">Navigation</div>
+      <a href="/" class="nav-item" id="nav-home">Accueil</a>
+      <a href="/privacy" class="nav-item" id="nav-privacy">Confidentialité</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="footer-label" id="footer-label">Langue</div>
+      <select class="lang-select" id="lang-select" onchange="setLang(this.value)">
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <option value="ca">Català</option>
+      </select>
+    </div>
+  </aside>
+
+  <main class="main">
+    <slot />
+  </main>
+
+  <script>
+    const translations: Record<string, Record<string, string>> = {
+      fr: {
+        tagline: 'Votre journal de santé',
+        'nav-label': 'Navigation',
+        'nav-home': 'Accueil',
+        'nav-privacy': 'Confidentialité',
+        'footer-label': 'Langue',
+      },
+      es: {
+        tagline: 'Su diario de salud',
+        'nav-label': 'Navegación',
+        'nav-home': 'Inicio',
+        'nav-privacy': 'Privacidad',
+        'footer-label': 'Idioma',
+      },
+      ca: {
+        tagline: 'El vostre diari de salut',
+        'nav-label': 'Navegació',
+        'nav-home': 'Inici',
+        'nav-privacy': 'Privadesa',
+        'footer-label': 'Idioma',
+      },
+    };
+
+    function setLang(lang: string) {
+      // Update data-lang visibility
+      document.querySelectorAll('[data-lang]').forEach((el) => {
+        (el as HTMLElement).classList.toggle('visible', (el as HTMLElement).dataset.lang === lang);
+      });
+      // Update sidebar labels
+      const t = translations[lang];
+      Object.keys(t).forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = t[id];
+      });
+      document.documentElement.lang = lang;
+      localStorage.setItem('lang', lang);
+    }
+
+    // Active nav item
+    const path = window.location.pathname;
+    document.querySelectorAll('.nav-item').forEach((el) => {
+      const href = el.getAttribute('href');
+      if (href === path || (href === '/' && path === '/')) {
+        el.classList.add('active');
+      }
+    });
+
+    // Restore language
+    const saved = localStorage.getItem('lang') || 'fr';
+    const select = document.getElementById('lang-select') as HTMLSelectElement;
+    if (select) select.value = saved;
+    setLang(saved);
+  </script>
+</body>
+</html>
