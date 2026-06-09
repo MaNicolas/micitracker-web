@@ -13,7 +13,7 @@ export default {
 
   // Privacy — header
   'privacy.title': 'Politique de confidentialité',
-  'privacy.date': 'Dernière mise à jour : 26 mai 2026',
+  'privacy.date': 'Dernière mise à jour : 9 juin 2026',
 
   // Section 1
   'privacy.s1.title': '1. Qui sommes-nous ?',
@@ -26,7 +26,7 @@ export default {
   'privacy.s2.intro': 'Nous collectons uniquement les données que vous saisissez :',
   'privacy.s2.account': '<strong>Compte</strong> : adresse email et mot de passe (authentification)',
   'privacy.s2.stool': '<strong>Journal des selles</strong> : date, heure, échelle de Bristol, présence de sang, glaires, fatigue, notes',
-  'privacy.s2.food': '<strong>Journal alimentaire</strong> : date, heure, aliments consommés, tolérance, notes',
+  'privacy.s2.food': '<strong>Journal alimentaire</strong> : date, heure, aliments consommés, notes',
   'privacy.s2.meds': '<strong>Médicaments</strong> : nom, dosage, fréquence, dates de traitement',
   'privacy.s2.profile': '<strong>Profil médical</strong> : type de MICI, statut (rémission/poussée), date de diagnostic, informations sur votre médecin',
   'privacy.s2.notifs': '<strong>Notifications</strong> : heures de rappel configurées',
@@ -41,9 +41,9 @@ export default {
   'privacy.s3.legal': 'Base légale : consentement explicite (Article 9 §2 a) du RGPD).',
 
   // Section 4
-  'privacy.s4.title': '4. Hébergement et transfert des données',
-  'privacy.s4.p1': 'Vos données sont hébergées par <strong>Supabase</strong> (PostgreSQL) sur des serveurs situés en <strong>Europe (🇮🇪 Irlande, eu-west-1)</strong>, conformément au RGPD.',
-  'privacy.s4.p2': "Aucune donnée n'est transférée hors de l'Union européenne.",
+  'privacy.s4.title': '4. Hébergement et sous-traitants',
+  'privacy.s4.p1': 'Vos données sont traitées par les sous-traitants suivants :<br/><br/><strong>Supabase</strong> (AWS eu-west-1, 🇮🇪 Irlande) — base de données et authentification email/mot de passe.<br/><strong>Mailjet / Sinch</strong> (🇪🇺 UE) — emails transactionnels (confirmation d\'inscription, réinitialisation de mot de passe, notifications de sécurité).<br/><strong>Google</strong> — authentification OAuth si vous utilisez "Connexion avec Google". Les données transitent par les serveurs de Google, couverts par leurs clauses contractuelles types (CCT).<br/><strong>Expo / EAS</strong> (Cloudflare CDN) — distribution et mises à jour de l\'application.',
+  'privacy.s4.p2': "Supabase et Mailjet traitent vos données dans l'UE. Google OAuth peut transiter par des serveurs hors UE, couvert par les clauses contractuelles types de Google.",
   'privacy.s4.p3': 'Les données sont également stockées localement sur votre appareil (base SQLite) pour un accès hors ligne.',
 
   // Section 5

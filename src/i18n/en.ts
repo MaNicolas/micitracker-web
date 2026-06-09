@@ -13,7 +13,7 @@ export default {
 
   // Privacy — header
   'privacy.title': 'Privacy policy',
-  'privacy.date': 'Last updated: 26 May 2026',
+  'privacy.date': 'Last updated: 9 June 2026',
 
   // Section 1
   'privacy.s1.title': '1. Who are we?',
@@ -26,7 +26,7 @@ export default {
   'privacy.s2.intro': 'We only collect the data you enter:',
   'privacy.s2.account': '<strong>Account</strong>: email address and password (authentication)',
   'privacy.s2.stool': '<strong>Bowel movement journal</strong>: date, time, Bristol scale, presence of blood, mucus, fatigue, notes',
-  'privacy.s2.food': '<strong>Food diary</strong>: date, time, foods consumed, tolerance, notes',
+  'privacy.s2.food': '<strong>Food diary</strong>: date, time, foods consumed, notes',
   'privacy.s2.meds': '<strong>Medications</strong>: name, dosage, frequency, treatment dates',
   'privacy.s2.profile': '<strong>Medical profile</strong>: type of IBD, status (remission/flare), diagnosis date, information about your doctor',
   'privacy.s2.notifs': '<strong>Notifications</strong>: configured reminder times',
@@ -41,9 +41,9 @@ export default {
   'privacy.s3.legal': 'Legal basis: explicit consent (Article 9 §2 a) of the GDPR).',
 
   // Section 4
-  'privacy.s4.title': '4. Hosting and data transfer',
-  'privacy.s4.p1': 'Your data is hosted by <strong>Supabase</strong> (PostgreSQL) on servers located in <strong>Europe (🇮🇪 Ireland, eu-west-1)</strong>, in compliance with the GDPR.',
-  'privacy.s4.p2': 'No data is transferred outside the European Union.',
+  'privacy.s4.title': '4. Hosting and sub-processors',
+  'privacy.s4.p1': 'Your data is processed by the following sub-processors:<br/><br/><strong>Supabase</strong> (AWS eu-west-1, 🇮🇪 Ireland) — database and email/password authentication.<br/><strong>Mailjet / Sinch</strong> (🇪🇺 EU) — transactional emails (sign-up confirmation, password reset, security notifications).<br/><strong>Google</strong> — OAuth authentication if you use "Sign in with Google". Data transits through Google servers, covered by their Standard Contractual Clauses (SCCs).<br/><strong>Expo / EAS</strong> (Cloudflare CDN) — app distribution and updates.',
+  'privacy.s4.p2': 'Supabase and Mailjet process your data within the EU. Google OAuth may transit through non-EU servers, covered by Google\'s Standard Contractual Clauses.',
   'privacy.s4.p3': 'Data is also stored locally on your device (SQLite database) for offline access.',
 
   // Section 5
