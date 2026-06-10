@@ -268,6 +268,16 @@ const { title } = Astro.props;
         color: #2D6A4F;
       }
       .mobile-logo span { font-size: 22px; }
+      .back-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+      }
       .burger-btn {
         display: flex;
         flex-direction: column;
@@ -321,6 +331,11 @@ const { title } = Astro.props;
 <body>
   <!-- Mobile header -->
   <header class="mobile-header">
+    <button class="back-btn" id="back-btn" aria-label="Retour" style="visibility:hidden">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
     <div class="mobile-logo">
       <span>🌿</span> MICI Tracker
     </div>
@@ -432,6 +447,14 @@ const { title } = Astro.props;
       // Sync desktop select
       const select = document.getElementById('lang-select');
       if (select) select.value = lang;
+    }
+
+    // Back button — visible everywhere except home
+    const backBtn = document.getElementById('back-btn');
+    const isHome = (window.location.pathname.replace(/\/$/, '') || '/') === '/';
+    if (backBtn && !isHome) {
+      backBtn.style.visibility = 'visible';
+      backBtn.addEventListener('click', () => history.back());
     }
 
     // Burger menu
