@@ -13,7 +13,7 @@ const { title } = Astro.props;
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <title>{title} — MICI Tracker</title>
-  <style>
+  <style is:global>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -149,6 +149,101 @@ const { title } = Astro.props;
     }
     .sidebar-overlay.open { display: block; }
 
+    /* Lang modal */
+    .lang-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 200;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .lang-modal-overlay.open { display: flex; }
+    .lang-modal {
+      background: #fff;
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+      max-width: 480px;
+      padding-bottom: env(safe-area-inset-bottom, 16px);
+      animation: slideUp 0.25s ease;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+    .lang-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 20px 16px;
+      border-bottom: 1px solid #F3F4F6;
+    }
+    .lang-modal-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1A1A2E;
+    }
+    .lang-modal-close {
+      background: none;
+      border: none;
+      font-size: 22px;
+      color: #6B7280;
+      cursor: pointer;
+      line-height: 1;
+      padding: 2px 6px;
+    }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      border-bottom: 1px solid #F3F4F6;
+      cursor: pointer;
+      font-size: 16px;
+      color: #374151;
+    }
+    .lang-option:last-child { border-bottom: none; }
+    .lang-option:active { background: #F9FAFB; }
+    .lang-option.selected { font-weight: 700; color: #1A1A2E; }
+    .lang-check {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #2D6A4F;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    /* Lang button in sidebar footer */
+    .lang-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 14px;
+      border-radius: 8px;
+      border: 1px solid #E5E7EB;
+      background: #F9FAFB;
+      color: #374151;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: left;
+    }
+    .lang-btn-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .lang-btn-chevron {
+      font-size: 10px;
+      color: #9CA3AF;
+    }
+
     /* Mobile */
     @media (max-width: 768px) {
       body { flex-direction: column; }
@@ -190,6 +285,9 @@ const { title } = Astro.props;
         transition: all 0.2s;
       }
 
+      /* On mobile, hide the desktop select, show the button */
+      .lang-select { display: none; }
+
       .sidebar {
         width: 260px;
         min-height: 100vh;
@@ -211,9 +309,11 @@ const { title } = Astro.props;
 
       .main { margin-left: 0; padding: 24px 20px; }
     }
-  </style>
-  <style is:global>
-    [data-i18n] { }
+
+    /* On desktop, hide the lang button */
+    @media (min-width: 769px) {
+      .lang-btn { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -229,8 +329,24 @@ const { title } = Astro.props;
     </button>
   </header>
 
-  <!-- Overlay -->
+  <!-- Sidebar overlay -->
   <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- Lang modal -->
+  <div class="lang-modal-overlay" id="lang-modal-overlay">
+    <div class="lang-modal">
+      <div class="lang-modal-header">
+        <span class="lang-modal-title" data-i18n="lang.choose">Choisir la langue</span>
+        <button class="lang-modal-close" id="lang-modal-close">✕</button>
+      </div>
+      <div id="lang-options">
+        <div class="lang-option" data-lang="fr">Français</div>
+        <div class="lang-option" data-lang="en">English</div>
+        <div class="lang-option" data-lang="es">Español</div>
+        <div class="lang-option" data-lang="ca">Català</div>
+      </div>
+    </div>
+  </div>
 
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-logo">
@@ -247,12 +363,21 @@ const { title } = Astro.props;
 
     <div class="sidebar-footer">
       <div class="footer-label" data-i18n="lang.label">Langue</div>
+      <!-- Desktop -->
       <select class="lang-select" id="lang-select">
         <option value="fr">Français</option>
         <option value="en">English</option>
         <option value="es">Español</option>
         <option value="ca">Català</option>
       </select>
+      <!-- Mobile -->
+      <button class="lang-btn" id="lang-btn">
+        <span class="lang-btn-left">
+          <span>🌐</span>
+          <span id="lang-btn-label">Français</span>
+        </span>
+        <span class="lang-btn-chevron">▼</span>
+      </button>
     </div>
   </aside>
 
@@ -263,11 +388,17 @@ const { title } = Astro.props;
   </main>
 
   <script define:vars={{ translations }}>
+    const LANGUAGES = [
+      { value: 'fr', label: 'Français' },
+      { value: 'en', label: 'English' },
+      { value: 'es', label: 'Español' },
+      { value: 'ca', label: 'Català' },
+    ];
+
     function setLang(lang) {
       const t = translations[lang];
       if (!t) return;
 
-      // Update all i18n elements
       document.querySelectorAll('[data-i18n]').forEach((el) => {
         const key = el.dataset.i18n;
         if (t[key] !== undefined) el.innerHTML = t[key];
@@ -275,6 +406,30 @@ const { title } = Astro.props;
 
       document.documentElement.lang = lang;
       localStorage.setItem('lang', lang);
+
+      // Update lang button label
+      const langBtnLabel = document.getElementById('lang-btn-label');
+      const found = LANGUAGES.find(l => l.value === lang);
+      if (langBtnLabel && found) langBtnLabel.textContent = found.label;
+
+      // Update checkmarks in modal
+      document.querySelectorAll('.lang-option').forEach(el => {
+        const isSelected = el.dataset.lang === lang;
+        el.classList.toggle('selected', isSelected);
+        const existing = el.querySelector('.lang-check');
+        if (isSelected && !existing) {
+          const check = document.createElement('span');
+          check.className = 'lang-check';
+          check.textContent = '✓';
+          el.appendChild(check);
+        } else if (!isSelected && existing) {
+          existing.remove();
+        }
+      });
+
+      // Sync desktop select
+      const select = document.getElementById('lang-select');
+      if (select) select.value = lang;
     }
 
     // Burger menu
@@ -295,6 +450,32 @@ const { title } = Astro.props;
     if (overlay) overlay.addEventListener('click', closeMenu);
     document.querySelectorAll('.nav-item').forEach(el => el.addEventListener('click', closeMenu));
 
+    // Lang modal
+    const langModalOverlay = document.getElementById('lang-modal-overlay');
+    const langBtn = document.getElementById('lang-btn');
+    const langModalClose = document.getElementById('lang-modal-close');
+
+    function openLangModal() {
+      langModalOverlay.classList.add('open');
+    }
+    function closeLangModal() {
+      langModalOverlay.classList.remove('open');
+    }
+
+    if (langBtn) langBtn.addEventListener('click', openLangModal);
+    if (langModalClose) langModalClose.addEventListener('click', closeLangModal);
+    langModalOverlay.addEventListener('click', (e) => {
+      if (e.target === langModalOverlay) closeLangModal();
+    });
+
+    document.querySelectorAll('.lang-option').forEach(el => {
+      el.addEventListener('click', () => {
+        setLang(el.dataset.lang);
+        closeLangModal();
+        closeMenu();
+      });
+    });
+
     // Active nav item
     const path = window.location.pathname.replace(/\/$/, '') || '/';
     document.querySelectorAll('.nav-item').forEach((el) => {
@@ -302,13 +483,12 @@ const { title } = Astro.props;
       el.classList.toggle('active', href === path);
     });
 
+    // Desktop select
+    const select = document.getElementById('lang-select');
+    if (select) select.addEventListener('change', (e) => setLang(e.target.value));
+
     // Restore language
     const saved = localStorage.getItem('lang') || 'fr';
-    const select = document.getElementById('lang-select');
-    if (select) {
-      select.value = saved;
-      select.addEventListener('change', (e) => setLang(e.target.value));
-    }
     setLang(saved);
   </script>
 </body>
