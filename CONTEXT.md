@@ -18,6 +18,9 @@
 2. L'importer dans `src/i18n/index.ts`
 3. Ajouter l'option dans le `<select>` de `Layout.astro`
 
+## Bugs connus
+- [ ] **Burger menu mobile** : quand on scrolle la page, la sidebar scrolle aussi au lieu de rester fixe. À corriger dans `src/layouts/Layout.astro`.
+
 ## Backlog
 
 ### À explorer (nécessite publication sur les stores)
