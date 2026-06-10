@@ -203,6 +203,7 @@ const { title } = Astro.props;
         border-right: 1px solid #E5E7EB;
         padding: 32px 0 calc(32px + env(safe-area-inset-bottom, 16px));
         overflow-y: auto;
+        overscroll-behavior: contain;
       }
       .sidebar.open {
         transform: translateX(0);
@@ -283,10 +284,12 @@ const { title } = Astro.props;
     function openMenu() {
       sidebar.classList.add('open');
       overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
     }
     function closeMenu() {
       sidebar.classList.remove('open');
       overlay.classList.remove('open');
+      document.body.style.overflow = '';
     }
     if (burgerBtn) burgerBtn.addEventListener('click', openMenu);
     if (overlay) overlay.addEventListener('click', closeMenu);
