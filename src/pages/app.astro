@@ -104,6 +104,19 @@ import { t } from '../i18n/index';
       color: #6B7280;
       line-height: 1.7;
     }
+    .feature-desc :global(ul) {
+      margin-top: 8px;
+      padding-left: 0;
+      list-style: none;
+    }
+    .feature-desc :global(li) {
+      margin-bottom: 4px;
+    }
+    .feature-desc :global(li)::before {
+      content: '· ';
+      color: #2D6A4F;
+      font-weight: 700;
+    }
 
     @media (max-width: 600px) {
       .feature, .feature.reverse {
