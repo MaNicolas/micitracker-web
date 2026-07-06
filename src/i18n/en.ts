@@ -44,6 +44,8 @@ export default {
   'app.subtitle': 'Everything MICI Tracker can do for you, at a glance.',
   'app.calendar.title': 'Calendar',
   'app.calendar.desc': 'View your symptoms day by day with colour coding.<ul><li>Green, orange, red based on severity</li><li>Stool count shown on each day</li><li>Tap a day to see the full details</li></ul>',
+  'app.day.title': 'Daily summary',
+  'app.day.desc': 'Tap a day to see everything that happened.<ul><li>Stools, meals and notes for the day</li><li>Quick navigation between days</li><li>Edit or delete an entry in one swipe</li></ul>',
   'app.stool.title': 'Stool logging',
   'app.stool.desc': 'Log everything in a few seconds.<ul><li>Bristol scale (0 to 7)</li><li>Blood, mucus, pain, fatigue</li><li>Editable time and free notes</li></ul>',
   'app.food.title': 'Meal diary',

@@ -148,10 +148,7 @@ import { t } from '../i18n/index';
     <!-- Calendrier -->
     <div class="feature">
       <div class="feature-screenshot">
-        <div class="feature-screenshot-duo">
-          <div class="phone-frame"><img src="/screenshots/calendar.jpeg" alt="Calendrier" /></div>
-          <div class="phone-frame"><img src="/screenshots/day-modal.jpeg" alt="Détail du jour" /></div>
-        </div>
+        <div class="phone-frame"><img src="/screenshots/calendar.jpeg" alt="Calendrier" /></div>
       </div>
       <div class="feature-body">
         <div class="feature-icon">📅</div>
@@ -160,8 +157,20 @@ import { t } from '../i18n/index';
       </div>
     </div>
 
-    <!-- Saisie des selles -->
+    <!-- Résumé de la journée -->
     <div class="feature reverse">
+      <div class="feature-screenshot">
+        <div class="phone-frame"><img src="/screenshots/day-modal.jpeg" alt="Résumé de la journée" /></div>
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon">📋</div>
+        <div class="feature-title" data-i18n="app.day.title">{t('fr', 'app.day.title')}</div>
+        <div class="feature-desc" data-i18n="app.day.desc">{t('fr', 'app.day.desc')}</div>
+      </div>
+    </div>
+
+    <!-- Saisie des selles -->
+    <div class="feature">
       <div class="feature-screenshot">
         <div class="phone-frame">
           <img src="/screenshots/stool.jpeg" alt="Saisie des selles" />

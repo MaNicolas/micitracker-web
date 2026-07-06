@@ -44,6 +44,8 @@ export default {
   'app.subtitle': 'Tot el que MICI Tracker pot fer per vosaltres, d\'un cop d\'ull.',
   'app.calendar.title': 'Calendari',
   'app.calendar.desc': 'Visualitzeu els vostres símptomes dia a dia amb un codi de colors.<ul><li>Verd, taronja, vermell segons la gravetat</li><li>Nombre de deposicions a cada dia</li><li>Toqueu un dia per veure el detall</li></ul>',
+  'app.day.title': 'Resum del dia',
+  'app.day.desc': 'Toqueu un dia per veure tot el que va passar.<ul><li>Deposicions, àpats i notes del dia</li><li>Navegació ràpida entre dies</li><li>Editeu o elimineu una entrada amb un gest</li></ul>',
   'app.stool.title': 'Registre de deposicions',
   'app.stool.desc': 'Anoteu-ho tot en segons.<ul><li>Escala de Bristol (0 a 7)</li><li>Sang, mucositats, dolor, fatiga</li><li>Hora modificable i notes lliures</li></ul>',
   'app.food.title': 'Diari de menjars',

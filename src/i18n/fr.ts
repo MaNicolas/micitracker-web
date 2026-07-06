@@ -44,6 +44,8 @@ export default {
   'app.subtitle': 'Tout ce que MICI Tracker peut faire pour vous, en un coup d\'œil.',
   'app.calendar.title': 'Calendrier',
   'app.calendar.desc': 'Visualisez vos symptômes jour par jour grâce à un code couleur.<ul><li>Vert, orange, rouge selon la sévérité</li><li>Nombre de selles affiché sur chaque jour</li><li>Cliquez sur un jour pour voir le détail</li></ul>',
+  'app.day.title': 'Résumé de la journée',
+  'app.day.desc': 'Cliquez sur un jour pour voir tout ce qui s\'est passé.<ul><li>Selles, repas et notes du jour</li><li>Navigation rapide entre les jours</li><li>Modifiez ou supprimez une entrée en un geste</li></ul>',
   'app.stool.title': 'Saisie des selles',
   'app.stool.desc': 'Notez tout en quelques secondes.<ul><li>Échelle de Bristol (0 à 7)</li><li>Sang, glaires, douleurs, fatigue</li><li>Heure modifiable et notes libres</li></ul>',
   'app.food.title': 'Journal des repas',
