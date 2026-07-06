@@ -20,6 +20,16 @@ import { t } from '../i18n/index';
       color: #2D6A4F;
       margin-bottom: 14px;
     }
+    .beta-badge {
+      display: inline-block;
+      background: #2D6A4F;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
     .hero-tagline {
       font-size: 16px;
       color: #6B7280;
@@ -212,6 +222,7 @@ import { t } from '../i18n/index';
   <div class="hero">
     <span class="hero-icon">🌿</span>
     <h1>MICI Tracker</h1>
+    <span class="beta-badge" data-i18n="home.beta">{t('fr', 'home.beta')}</span>
     <p class="hero-tagline" data-i18n="home.tagline">{t('fr', 'home.tagline')}</p>
   </div>
 

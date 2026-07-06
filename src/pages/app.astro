@@ -5,31 +5,255 @@ import { t } from '../i18n/index';
 
 <Layout title="L'application">
   <style>
-    .stub {
+    .app-hero {
       text-align: center;
-      padding: 80px 0;
+      padding: 48px 0 40px;
     }
-    .stub-icon {
-      font-size: 48px;
-      display: block;
-      margin-bottom: 16px;
-    }
-    .stub h1 {
-      font-size: 24px;
+    .app-hero h1 {
+      font-size: 28px;
       font-weight: 800;
       color: #2D6A4F;
       margin-bottom: 10px;
     }
-    .stub p {
+    .app-hero p {
       font-size: 15px;
       color: #6B7280;
       line-height: 1.6;
     }
+
+    .features-list {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      padding-bottom: 32px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .feature.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .feature-screenshot {
+      flex: 0 0 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .feature-screenshot img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Phone mockup */
+    .phone-frame {
+      background: #1a1a2e;
+      border-radius: 36px;
+      padding: 12px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      position: relative;
+    }
+    .phone-frame::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 22px;
+      background: #1a1a2e;
+      border-radius: 0 0 16px 16px;
+      z-index: 1;
+    }
+    .phone-frame img {
+      width: 100%;
+      height: auto;
+      border-radius: 24px;
+      display: block;
+      box-shadow: none;
+    }
+    .feature-screenshot-duo {
+      display: flex;
+      gap: 16px;
+      flex: 0 0 380px;
+    }
+    .feature-screenshot-duo .phone-frame {
+      width: 50%;
+    }
+
+    .feature-body {
+      flex: 1;
+    }
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .feature-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1A1A2E;
+      margin-bottom: 8px;
+    }
+    .feature-desc {
+      font-size: 14px;
+      color: #6B7280;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .feature, .feature.reverse {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .feature-screenshot {
+        flex: none;
+        width: 220px;
+      }
+      .feature-screenshot-duo {
+        flex: none;
+        width: 100%;
+        max-width: 320px;
+      }
+      .feature-body {
+        text-align: center;
+      }
+    }
   </style>
 
-  <div class="stub">
-    <span class="stub-icon">📱</span>
-    <h1 data-i18n="nav.app">{t('fr', 'nav.app')}</h1>
-    <p data-i18n="home.stores.soon">{t('fr', 'home.stores.soon')}</p>
+  <div class="app-hero">
+    <h1 data-i18n="app.title">{t('fr', 'app.title')}</h1>
+    <p data-i18n="app.subtitle">{t('fr', 'app.subtitle')}</p>
+  </div>
+
+  <div class="features-list">
+    <!-- Calendrier -->
+    <div class="feature">
+      <div class="feature-screenshot">
+        <div class="feature-screenshot-duo">
+          <div class="phone-frame"><img src="/screenshots/calendar.jpeg" alt="Calendrier" /></div>
+          <div class="phone-frame"><img src="/screenshots/day-modal.jpeg" alt="Détail du jour" /></div>
+        </div>
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon">📅</div>
+        <div class="feature-title" data-i18n="app.calendar.title">{t('fr', 'app.calendar.title')}</div>
+        <div class="feature-desc" data-i18n="app.calendar.desc">{t('fr', 'app.calendar.desc')}</div>
+      </div>
+    </div>
+
+    <!-- Saisie des selles -->
+    <div class="feature reverse">
+      <div class="feature-screenshot">
+        <div class="phone-frame">
+          <img src="/screenshots/stool.jpeg" alt="Saisie des selles" />
+        </div>
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon">📊</div>
+        <div class="feature-title" data-i18n="app.stool.title">{t('fr', 'app.stool.title')}</div>
+        <div class="feature-desc" data-i18n="app.stool.desc">{t('fr', 'app.stool.desc')}</div>
+      </div>
+    </div>
+
+    <!-- Journal des repas -->
+    <div class="feature">
+      <div class="feature-screenshot">
+        <div class="phone-frame"><img src="/screenshots/food.jpeg" alt="Journal des repas" /></div>
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon">🥗</div>
+        <div class="feature-title" data-i18n="app.food.title">{t('fr', 'app.food.title')}</div>
+        <div class="feature-desc" data-i18n="app.food.desc">{t('fr', 'app.food.desc')}</div>
+      </div>
+    </div>
+
+    <!-- Statistiques -->
+    <div class="feature reverse">
+      <div class="feature-screenshot">
+        <div class="phone-frame"><img src="/screenshots/stats.jpeg" alt="Statistiques" /></div>
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon">📈</div>
+        <div class="feature-title" data-i18n="app.stats.title">{t('fr', 'app.stats.title')}</div>
+        <div class="feature-desc" data-i18n="app.stats.desc">{t('fr', 'app.stats.desc')}</div>
+      </div>
+    </div>
+
+    <!-- Profil et médicaments -->
+    <div class="feature">
+      <div class="feature-screenshot">
+        <div class="phone-frame"><img src="/screenshots/meds.jpeg" alt="Profil et médicaments" /></div>
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon">💊</div>
+        <div class="feature-title" data-i18n="app.meds.title">{t('fr', 'app.meds.title')}</div>
+        <div class="feature-desc" data-i18n="app.meds.desc">{t('fr', 'app.meds.desc')}</div>
+      </div>
+    </div>
+
+    <!-- Corrélations -->
+    <div class="feature reverse">
+      <div class="feature-screenshot">
+        <div class="phone-frame"><img src="/screenshots/correlations.jpeg" alt="Corrélations" /></div>
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon">🔗</div>
+        <div class="feature-title" data-i18n="app.correlations.title">{t('fr', 'app.correlations.title')}</div>
+        <div class="feature-desc" data-i18n="app.correlations.desc">{t('fr', 'app.correlations.desc')}</div>
+      </div>
+    </div>
+
+    <!-- Multilingue -->
+    <div class="feature">
+      <div class="feature-screenshot">
+        <div class="phone-frame"><img src="/screenshots/langs.jpeg" alt="Multilingue" /></div>
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon">🌐</div>
+        <div class="feature-title" data-i18n="app.langs.title">{t('fr', 'app.langs.title')}</div>
+        <div class="feature-desc" data-i18n="app.langs.desc">{t('fr', 'app.langs.desc')}</div>
+      </div>
+    </div>
+
+    <!-- Personnalisable -->
+    <div class="feature reverse">
+      <div class="feature-screenshot">
+        <div class="phone-frame"><img src="/screenshots/custom.jpeg" alt="Personnalisation" /></div>
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon">🎨</div>
+        <div class="feature-title" data-i18n="app.custom.title">{t('fr', 'app.custom.title')}</div>
+        <div class="feature-desc" data-i18n="app.custom.desc">{t('fr', 'app.custom.desc')}</div>
+      </div>
+    </div>
+
+    <!-- Notifications -->
+    <div class="feature">
+      <div class="feature-screenshot">
+        <div class="phone-frame"><img src="/screenshots/notifs.jpeg" alt="Notifications" /></div>
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon">🔔</div>
+        <div class="feature-title" data-i18n="app.notifs.title">{t('fr', 'app.notifs.title')}</div>
+        <div class="feature-desc" data-i18n="app.notifs.desc">{t('fr', 'app.notifs.desc')}</div>
+      </div>
+    </div>
+
+    <!-- Préparer ma consultation -->
+    <div class="feature reverse">
+      <div class="feature-screenshot">
+        <div class="phone-frame"><img src="/screenshots/consult.jpeg" alt="Préparer ma consultation" /></div>
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon">🩺</div>
+        <div class="feature-title" data-i18n="app.consult.title">{t('fr', 'app.consult.title')}</div>
+        <div class="feature-desc" data-i18n="app.consult.desc">{t('fr', 'app.consult.desc')}</div>
+      </div>
+    </div>
   </div>
 </Layout>
