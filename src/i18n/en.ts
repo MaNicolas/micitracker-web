@@ -35,6 +35,8 @@ export default {
   // Nav
   'nav.app': 'The app',
   'nav.about': 'About me',
+  'footer.nav': 'Navigation',
+  'footer.contact': 'Contact',
   'lang.choose': 'Choose language',
 
   // App page
@@ -63,7 +65,7 @@ export default {
 
   // Privacy — header
   'privacy.title': 'Privacy policy',
-  'privacy.date': 'Last updated: 9 June 2026',
+  'privacy.date': 'Last updated: 6 July 2026',
 
   // Section 1
   'privacy.s1.title': '1. Who are we?',
