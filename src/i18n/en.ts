@@ -17,13 +17,23 @@ export default {
   'home.stores.ios': 'Download on the App Store',
   'home.features.title': 'Everything you need',
   'home.feat1.title': 'Symptom tracking',
-  'home.feat1.desc': 'Daily log of stools, pain, fatigue and blood.',
+  'home.feat1.desc': 'Log your stools, pain and fatigue in seconds. No more trying to remember how last week went.',
   'home.feat2.title': 'Food diary',
-  'home.feat2.desc': 'Identify the foods that influence your disease.',
+  'home.feat2.desc': 'Record what you eat, day after day. Concrete data points to share with your doctor, no diagnosis, just facts.',
   'home.feat3.title': 'Prepare my consultation',
-  'home.feat3.desc': 'Harvey-Bradshaw and Mayo scores, PDF export for your doctor.',
+  'home.feat3.desc': 'A report ready in one click, clinical scores, history, everything you no longer have to explain from memory to your doctor.',
   'home.feat4.title': 'Statistics',
-  'home.feat4.desc': 'Visualise the evolution of your symptoms over several months.',
+  'home.feat4.desc': 'See your treatment start and stop dates on the same chart as your symptoms. You see the facts, you discuss them with your doctor.',
+  // Why section
+  'home.why.title': 'Why MICI Tracker?',
+  'home.why.text': 'Built by an IBD patient, for IBD patients. MICI Tracker lifts the mental load around your disease: it helps you record facts, not interpret them for you. Your data stays in Europe, nothing is used to diagnose you.',
+  // CTA section
+  'home.cta.title': 'Want to learn more?',
+  'home.cta.btn1': 'Discover the app',
+  'home.cta.btn2': 'About me',
+  // Nav
+  'nav.app': 'The app',
+  'nav.about': 'About me',
   'lang.choose': 'Choose language',
 
   // Privacy — header

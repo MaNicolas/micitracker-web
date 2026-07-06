@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { t } from '../i18n/index';
+---
+
+<Layout title="L'application">
+  <style>
+    .stub {
+      text-align: center;
+      padding: 80px 0;
+    }
+    .stub-icon {
+      font-size: 48px;
+      display: block;
+      margin-bottom: 16px;
+    }
+    .stub h1 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #2D6A4F;
+      margin-bottom: 10px;
+    }
+    .stub p {
+      font-size: 15px;
+      color: #6B7280;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="stub">
+    <span class="stub-icon">📱</span>
+    <h1 data-i18n="nav.app">{t('fr', 'nav.app')}</h1>
+    <p data-i18n="home.stores.soon">{t('fr', 'home.stores.soon')}</p>
+  </div>
+</Layout>

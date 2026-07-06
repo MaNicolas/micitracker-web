@@ -17,13 +17,23 @@ export default {
   'home.stores.ios': 'Disponible en el App Store',
   'home.features.title': 'Todo lo que necesitas',
   'home.feat1.title': 'Seguimiento de síntomas',
-  'home.feat1.desc': 'Diario de deposiciones, dolor, fatiga y sangre.',
+  'home.feat1.desc': 'Anota tus deposiciones, dolores y fatiga en segundos. Ya no hace falta recordar de memoria cómo fue la semana pasada.',
   'home.feat2.title': 'Diario alimentario',
-  'home.feat2.desc': 'Identifica los alimentos que influyen en tu enfermedad.',
+  'home.feat2.desc': 'Anota lo que comes, día tras día. Datos concretos para compartir con tu médico, sin diagnóstico, solo hechos.',
   'home.feat3.title': 'Preparar mi consulta',
-  'home.feat3.desc': 'Índices Harvey-Bradshaw y Mayo, exportación PDF para tu médico.',
+  'home.feat3.desc': 'Un informe listo en un clic, puntuaciones clínicas, historial, todo lo que ya no tienes que volver a explicar de memoria al médico.',
   'home.feat4.title': 'Estadísticas',
-  'home.feat4.desc': 'Visualiza la evolución de tus síntomas durante varios meses.',
+  'home.feat4.desc': 'Visualiza el inicio y el fin de tus tratamientos en la misma curva que tus síntomas. Ves los hechos, los comentas con tu médico.',
+  // Why section
+  'home.why.title': '¿Por qué MICI Tracker?',
+  'home.why.text': 'Creada por un paciente con EII, para pacientes con EII. MICI Tracker quita la carga mental de la enfermedad: te ayuda a anotar los hechos, no a interpretarlos por ti. Tus datos permanecen en Europa, nada se usa para diagnosticarte.',
+  // CTA section
+  'home.cta.title': '¿Quieres saber más?',
+  'home.cta.btn1': 'Descubrir la aplicación',
+  'home.cta.btn2': '¿Quién soy?',
+  // Nav
+  'nav.app': 'La aplicación',
+  'nav.about': '¿Quién soy?',
   'lang.choose': 'Elegir idioma',
 
   // Privacy — header

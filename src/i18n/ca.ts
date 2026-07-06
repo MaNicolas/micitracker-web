@@ -17,13 +17,23 @@ export default {
   'home.stores.ios': 'Disponible a l\'App Store',
   'home.features.title': 'Tot el que necessiteu',
   'home.feat1.title': 'Seguiment de símptomes',
-  'home.feat1.desc': 'Diari de deposicions, dolor, fatiga i sang.',
+  'home.feat1.desc': 'Anoteu les vostres deposicions, dolors i fatiga en segons. Ja no cal recordar de memòria com va anar la setmana passada.',
   'home.feat2.title': 'Diari alimentari',
-  'home.feat2.desc': 'Identifiqueu els aliments que influeixen en la vostra malaltia.',
+  'home.feat2.desc': 'Anoteu el que mengeu, dia rere dia. Dades concretes per compartir amb el vostre metge, sense diagnòstic, només fets.',
   'home.feat3.title': 'Preparar la meva consulta',
-  'home.feat3.desc': 'Índexs Harvey-Bradshaw i Mayo, exportació PDF per al vostre metge.',
+  'home.feat3.desc': 'Un informe a punt en un clic, puntuacions clíniques, historial, tot el que ja no heu de tornar a explicar de memòria al metge.',
   'home.feat4.title': 'Estadístiques',
-  'home.feat4.desc': "Visualitzeu l'evolució dels vostres símptomes durant diversos mesos.",
+  'home.feat4.desc': 'Visualitzeu l\'inici i la fi dels vostres tractaments a la mateixa corba que els vostres símptomes. Veieu els fets, en parleu amb el vostre metge.',
+  // Why section
+  'home.why.title': 'Per què MICI Tracker?',
+  'home.why.text': 'Creada per un pacient amb MII, per a pacients amb MII. MICI Tracker treu la càrrega mental de la malaltia: us ajuda a anotar els fets, no a interpretar-los per vosaltres. Les vostres dades es queden a Europa, res no s\'utilitza per diagnosticar-vos.',
+  // CTA section
+  'home.cta.title': 'Voleu saber-ne més?',
+  'home.cta.btn1': 'Descobrir l\'aplicació',
+  'home.cta.btn2': 'Qui soc?',
+  // Nav
+  'nav.app': 'L\'aplicació',
+  'nav.about': 'Qui soc?',
   'lang.choose': 'Triar l\'idioma',
 
   // Privacy — header

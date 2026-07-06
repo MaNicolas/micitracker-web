@@ -17,13 +17,23 @@ export default {
   'home.stores.ios': 'Disponible sur l\'App Store',
   'home.features.title': 'Tout ce dont vous avez besoin',
   'home.feat1.title': 'Suivi des symptômes',
-  'home.feat1.desc': 'Journal quotidien des selles, douleurs, fatigue et sang.',
+  'home.feat1.desc': 'Notez vos selles, douleurs et fatigue en quelques secondes. Fini de reconstituer de mémoire comment allait la semaine dernière.',
   'home.feat2.title': 'Journal alimentaire',
-  'home.feat2.desc': 'Identifiez les aliments qui influencent votre maladie.',
+  'home.feat2.desc': 'Notez ce que vous mangez, jour après jour. De quoi avoir des repères concrets à partager avec votre médecin, pas de diagnostic, juste des faits.',
   'home.feat3.title': 'Préparer ma consultation',
-  'home.feat3.desc': 'Scores Harvey-Bradshaw et Mayo, export PDF pour votre médecin.',
+  'home.feat3.desc': 'Un rapport prêt en un clic, scores cliniques, historique, tout ce que vous n\'avez plus à réexpliquer de mémoire au médecin.',
   'home.feat4.title': 'Statistiques',
-  'home.feat4.desc': 'Visualisez l\'évolution de vos symptômes sur plusieurs mois.',
+  'home.feat4.desc': 'Visualisez le début et l\'arrêt de vos traitements sur la même courbe que vos symptômes. Vous voyez les faits, vous en discutez avec votre médecin.',
+  // Why section
+  'home.why.title': 'Pourquoi MICI Tracker ?',
+  'home.why.text': 'Créée par un patient MICI, pour les patients MICI. MICI Tracker enlève la charge mentale autour de la maladie\u00a0: elle vous aide à noter les faits, pas à les interpréter à votre place. Vos données restent en Europe, rien n\'est utilisé pour vous diagnostiquer.',
+  // CTA section
+  'home.cta.title': 'Envie d\'en savoir plus ?',
+  'home.cta.btn1': 'Découvrir l\'application',
+  'home.cta.btn2': 'Qui suis-je ?',
+  // Nav
+  'nav.app': 'L\'application',
+  'nav.about': 'Qui suis-je ?',
   'lang.choose': 'Choisir la langue',
 
   // Privacy — header
