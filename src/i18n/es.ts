@@ -65,6 +65,31 @@ export default {
   'app.consult.title': 'Preparar mi consulta',
   'app.consult.desc': 'Llega preparado a tu cita médica.<ul><li>Cuestionarios clínicos: MICI-Control, Harvey-Bradshaw, PRO-2 (Mayo)</li><li>Informe PDF con gráficos e historial</li><li>Elige el período a cubrir</li></ul>',
 
+  // About page
+  'about.title': '¿Quién soy?',
+  'about.s1.title': 'Mi historia',
+  'about.s1.p1': 'Me llamo Nicolas y vivo en Barcelona.',
+  'about.s1.p2': 'En 2024, me diagnosticaron una colitis ulcerosa.',
+  'about.s1.p3': 'Cuando llega el diagnóstico, se oyen muchas palabras difíciles: enfermedad crónica, autoinmune, sin cura… Luego te explican que cada paciente es diferente, que no existe una dieta milagrosa y que habrá que aprender a vivir con ello. No es fácil de encajar.',
+  'about.s1.p5': 'Unas semanas después llegan las primeras citas con el gastroenterólogo. Y la misma pregunta vuelve una y otra vez: «¿Cómo se encuentra?» Enseguida me di cuenta de que nunca tenía una respuesta precisa.',
+  'about.s1.p8': 'Simplemente sabía que algunos días iban mejor que otros. Pero era incapaz de recordar lo que había comido, la frecuencia de mis síntomas o si un tratamiento parecía realmente eficaz.',
+  'about.s1.p9': 'Así que busqué una aplicación que me ayudara a hacer un seguimiento de todo esto de forma sencilla. Pero nada: simplemente no se adaptaban a mis necesidades.',
+  'about.s1.p11': 'Así que decidí crear la que me hubiera gustado tener. Así nació MICI Tracker.',
+
+  'about.s2.title': 'La misión',
+  'about.s2.p1': 'Al principio, MICI Tracker era un proyecto personal. Simplemente quería reducir la carga mental de la enfermedad y llegar a la consulta de mi gastroenterólogo con información fiable en lugar de recuerdos aproximados.',
+  'about.s2.p3': 'Hoy, la aplicación se basa en tres pilares:',
+  'about.s2.li1': 'el seguimiento de las deposiciones;',
+  'about.s2.li2': 'el seguimiento de la alimentación;',
+  'about.s2.li3': 'el seguimiento de los tratamientos.',
+  'about.s2.p4': 'El objetivo es simple: ayudarte a observar tu enfermedad a diario y a comprender mejor su evolución.',
+  'about.s2.p5': 'MICI Tracker no sustituye a un médico ni a un diagnóstico, es simplemente una herramienta creada por un paciente, para ayudar a otros pacientes a recuperar un poco de control sobre una enfermedad que a menudo da la impresión de quitárnoslo.',
+  'about.s2.p7': 'Por último, una cosa me parecía esencial: tus datos te pertenecen. Están alojados en Europa, nunca se revenden y se pueden eliminar en cualquier momento.',
+  'about.s2.quote': '«No he creado la aplicación perfecta. Simplemente he creado la que me hubiera gustado tener el día que me anunciaron mi diagnóstico.»',
+
+  'about.s3.title': 'Contactar',
+  'about.s3.p1': '¿Una pregunta, una sugerencia, un error que reportar? No dudes en escribirme.',
+
   // Privacy — header
   'privacy.title': 'Política de privacidad',
   'privacy.date': 'Última actualización: 6 de julio de 2026',

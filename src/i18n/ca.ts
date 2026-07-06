@@ -65,6 +65,31 @@ export default {
   'app.consult.title': 'Preparar la meva consulta',
   'app.consult.desc': 'Arribeu preparats a la vostra cita mèdica.<ul><li>Qüestionaris clínics: MICI-Control, Harvey-Bradshaw, PRO-2 (Mayo)</li><li>Informe PDF amb gràfics i historial</li><li>Trieu el període a cobrir</li></ul>',
 
+  // About page
+  'about.title': 'Qui soc?',
+  'about.s1.title': 'La meva història',
+  'about.s1.p1': 'Em dic Nicolas i visc a Barcelona.',
+  'about.s1.p2': 'El 2024, em van diagnosticar una colitis ulcerosa.',
+  'about.s1.p3': 'Quan arriba el diagnòstic, se senten moltes paraules difícils: malaltia crònica, autoimmune, sense curació… Després t\'expliquen que cada pacient és diferent, que no existeix cap dieta miraculosa i que caldrà aprendre a viure-hi. No és fàcil d\'encaixar.',
+  'about.s1.p5': 'Unes setmanes més tard arriben les primeres visites amb el gastroenteròleg. I la mateixa pregunta torna una vegada i una altra: «Com es troba?» De seguida em vaig adonar que mai no tenia una resposta precisa.',
+  'about.s1.p8': 'Simplement sabia que alguns dies anaven millor que d\'altres. Però era incapaç de recordar què havia menjat, la freqüència dels meus símptomes o si un tractament semblava realment eficaç.',
+  'about.s1.p9': 'Així que vaig buscar una aplicació que m\'ajudés a fer un seguiment de tot això de manera senzilla. Però res a fer: simplement no s\'adaptaven a les meves necessitats.',
+  'about.s1.p11': 'Així que vaig decidir crear la que m\'hauria agradat tenir. Així va néixer MICI Tracker.',
+
+  'about.s2.title': 'La missió',
+  'about.s2.p1': 'Al principi, MICI Tracker era un projecte personal. Simplement volia reduir la càrrega mental de la malaltia i arribar a la consulta del meu gastroenteròleg amb informació fiable en lloc de records aproximats.',
+  'about.s2.p3': 'Avui, l\'aplicació es basa en tres pilars:',
+  'about.s2.li1': 'el seguiment de les deposicions;',
+  'about.s2.li2': 'el seguiment de l\'alimentació;',
+  'about.s2.li3': 'el seguiment dels tractaments.',
+  'about.s2.p4': 'L\'objectiu és simple: ajudar-vos a observar la vostra malaltia dia a dia i a comprendre\'n millor l\'evolució.',
+  'about.s2.p5': 'MICI Tracker no substitueix ni un metge ni un diagnòstic, és simplement una eina creada per un pacient, per ajudar altres pacients a recuperar una mica de control sobre una malaltia que sovint dona la impressió de treure\'ns-el.',
+  'about.s2.p7': 'Finalment, una cosa em semblava essencial: les vostres dades us pertanyen. Estan allotjades a Europa, mai no es revenen i es poden eliminar en qualsevol moment.',
+  'about.s2.quote': '«No he creat l\'aplicació perfecta. Simplement he creat la que m\'hauria agradat tenir el dia que em van anunciar el meu diagnòstic.»',
+
+  'about.s3.title': 'Contactar',
+  'about.s3.p1': 'Una pregunta, un suggeriment, un error a reportar? No dubteu a escriure\'m.',
+
   // Privacy — header
   'privacy.title': 'Política de privacitat',
   'privacy.date': 'Darrera actualització: 6 de juliol de 2026',

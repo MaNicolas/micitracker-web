@@ -5,31 +5,88 @@ import { t } from '../i18n/index';
 
 <Layout title="Qui suis-je ?">
   <style>
-    .stub {
-      text-align: center;
-      padding: 80px 0;
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
     }
-    .stub-icon {
-      font-size: 48px;
-      display: block;
-      margin-bottom: 16px;
-    }
-    .stub h1 {
-      font-size: 24px;
-      font-weight: 800;
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
       color: #2D6A4F;
-      margin-bottom: 10px;
+      margin-bottom: 32px;
     }
-    .stub p {
-      font-size: 15px;
-      color: #6B7280;
-      line-height: 1.6;
+    h2 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #2D6A4F;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #D8F3DC;
+    }
+    p { font-size: 16px; line-height: 1.7; color: #1A1A2E; margin-bottom: 10px; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    li { font-size: 16px; line-height: 1.7; color: #1A1A2E; margin-bottom: 4px; }
+    .quote {
+      font-size: 20px;
+      font-weight: 600;
+      font-style: italic;
+      color: #2D6A4F;
+      text-align: center;
+      margin: 16px 0;
+    }
+    a { color: #2D6A4F; }
+    .contact-block {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+      font-size: 16px;
+    }
+    .contact-block a {
+      font-weight: 600;
     }
   </style>
 
-  <div class="stub">
-    <span class="stub-icon">👋</span>
-    <h1 data-i18n="nav.about">{t('fr', 'nav.about')}</h1>
-    <p data-i18n="home.stores.soon">{t('fr', 'home.stores.soon')}</p>
+  <h1 data-i18n="about.title">{t('fr', 'about.title')}</h1>
+
+  <!-- Mon histoire -->
+  <div class="card">
+    <h2 data-i18n="about.s1.title">{t('fr', 'about.s1.title')}</h2>
+    <p data-i18n="about.s1.p1">{t('fr', 'about.s1.p1')}</p>
+    <p data-i18n="about.s1.p2">{t('fr', 'about.s1.p2')}</p>
+    <p data-i18n="about.s1.p3">{t('fr', 'about.s1.p3')}</p>
+    <p data-i18n="about.s1.p5">{t('fr', 'about.s1.p5')}</p>
+    <p data-i18n="about.s1.p8">{t('fr', 'about.s1.p8')}</p>
+    <p data-i18n="about.s1.p9">{t('fr', 'about.s1.p9')}</p>
+    <p data-i18n="about.s1.p11">{t('fr', 'about.s1.p11')}</p>
+  </div>
+
+  <!-- La mission -->
+  <div class="card">
+    <h2 data-i18n="about.s2.title">{t('fr', 'about.s2.title')}</h2>
+    <p data-i18n="about.s2.p1">{t('fr', 'about.s2.p1')}</p>
+    <p data-i18n="about.s2.p3">{t('fr', 'about.s2.p3')}</p>
+    <ul>
+      <li data-i18n="about.s2.li1">{t('fr', 'about.s2.li1')}</li>
+      <li data-i18n="about.s2.li2">{t('fr', 'about.s2.li2')}</li>
+      <li data-i18n="about.s2.li3">{t('fr', 'about.s2.li3')}</li>
+    </ul>
+    <p data-i18n="about.s2.p4">{t('fr', 'about.s2.p4')}</p>
+    <p data-i18n="about.s2.p5">{t('fr', 'about.s2.p5')}</p>
+    <p data-i18n="about.s2.p7">{t('fr', 'about.s2.p7')}</p>
+    <p style="font-style: italic;" data-i18n="about.s2.quote">{t('fr', 'about.s2.quote')}</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="card">
+    <h2 data-i18n="about.s3.title">{t('fr', 'about.s3.title')}</h2>
+    <p data-i18n="about.s3.p1">{t('fr', 'about.s3.p1')}</p>
+    <div class="contact-block">
+      <span>📧</span>
+      <a href="mailto:contact@micitracker.com">contact@micitracker.com</a>
+    </div>
   </div>
 </Layout>

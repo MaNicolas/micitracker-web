@@ -65,6 +65,31 @@ export default {
   'app.consult.title': 'Préparer ma consultation',
   'app.consult.desc': 'Arrivez préparé chez votre médecin.<ul><li>Questionnaires cliniques : MICI-Control, Harvey-Bradshaw, PRO-2 (Mayo)</li><li>Rapport PDF avec graphiques et historique</li><li>Choisissez la période à couvrir</li></ul>',
 
+  // About page
+  'about.title': 'Qui suis-je ?',
+  'about.s1.title': 'Mon histoire',
+  'about.s1.p1': 'Je m\'appelle Nicolas et je vis à Barcelone.',
+  'about.s1.p2': 'En 2024, on m\'a diagnostiqué une rectocolite hémorragique.',
+  'about.s1.p3': 'Quand le diagnostic tombe, on entend beaucoup de mots difficiles\u00a0: maladie chronique, auto-immune, pas de guérison… Puis on nous explique que chaque patient est différent, qu\'il n\'existe pas de régime miracle et qu\'il faudra apprendre à vivre avec. Pas facile à encaisser.',
+  'about.s1.p5': 'Quelques semaines plus tard arrivent les premiers rendez-vous chez le gastro-entérologue. Et la même question revient systématiquement\u00a0: «\u00a0Comment allez-vous\u00a0?\u00a0» Je me suis rapidement rendu compte que je n\'avais jamais de réponse précise.',
+  'about.s1.p8': 'Je savais simplement que certains jours allaient mieux que d\'autres. Mais impossible de me souvenir de ce que j\'avais mangé, de la fréquence de mes symptômes ou de savoir si un traitement semblait réellement efficace.',
+  'about.s1.p9': 'J\'ai donc cherché une application qui m\'aiderait à suivre tout ça simplement. Mais rien à faire\u00a0: elles ne correspondaient tout simplement pas à mes besoins.',
+  'about.s1.p11': 'Alors j\'ai décidé de créer celle que j\'aurais aimé avoir. C\'est comme ça qu\'est né MICI Tracker.',
+
+  'about.s2.title': 'La mission',
+  'about.s2.p1': 'Au départ, MICI Tracker était un projet personnel. Je voulais simplement réduire la charge mentale liée à la maladie et arriver chez mon gastro-entérologue avec des informations fiables plutôt qu\'avec des souvenirs approximatifs.',
+  'about.s2.p3': 'Aujourd\'hui, l\'application repose sur trois piliers\u00a0:',
+  'about.s2.li1': 'le suivi des selles\u00a0;',
+  'about.s2.li2': 'le suivi de l\'alimentation\u00a0;',
+  'about.s2.li3': 'le suivi des traitements.',
+  'about.s2.p4': 'L\'objectif est simple\u00a0: vous aider à observer votre maladie au quotidien et à mieux comprendre son évolution.',
+  'about.s2.p5': 'MICI Tracker ne remplace ni un médecin ni un diagnostic, c\'est simplement un outil conçu par un patient, pour aider d\'autres patients à reprendre un peu de contrôle sur une maladie qui donne souvent l\'impression de nous l\'enlever.',
+  'about.s2.p7': 'Enfin, une chose me semblait essentielle\u00a0: vos données vous appartiennent. Elles sont hébergées en Europe, ne sont jamais revendues et peuvent être supprimées à tout moment.',
+  'about.s2.quote': '«\u00a0Je n\'ai pas créé l\'application parfaite. J\'ai simplement créé celle que j\'aurais aimé avoir le jour où l\'on m\'a annoncé mon diagnostic.\u00a0»',
+
+  'about.s3.title': 'Me contacter',
+  'about.s3.p1': 'Une question, une suggestion, un bug à signaler ? N\'hésitez pas à m\'écrire.',
+
   // Privacy — header
   'privacy.title': 'Politique de confidentialité',
   'privacy.date': 'Dernière mise à jour : 6 juillet 2026',

@@ -65,6 +65,31 @@ export default {
   'app.consult.title': 'Prepare my consultation',
   'app.consult.desc': 'Walk into your appointment prepared.<ul><li>Clinical questionnaires: MICI-Control, Harvey-Bradshaw, PRO-2 (Mayo)</li><li>PDF report with charts and history</li><li>Choose the period to cover</li></ul>',
 
+  // About page
+  'about.title': 'About me',
+  'about.s1.title': 'My story',
+  'about.s1.p1': 'My name is Nicolas and I live in Barcelona.',
+  'about.s1.p2': 'In 2024, I was diagnosed with ulcerative colitis.',
+  'about.s1.p3': 'When the diagnosis comes, you hear a lot of difficult words: chronic disease, autoimmune, no cure… Then they explain that every patient is different, that there is no miracle diet and that you will have to learn to live with it. Not easy to take in.',
+  'about.s1.p5': 'A few weeks later come the first appointments with the gastroenterologist. And the same question keeps coming back: "How are you doing?" I quickly realised I never had a precise answer.',
+  'about.s1.p8': 'I simply knew that some days were better than others. But I couldn\'t remember what I had eaten, how frequent my symptoms were or whether a treatment was actually working.',
+  'about.s1.p9': 'So I looked for an app that would help me track all of this simply. But no luck: they just didn\'t match my needs.',
+  'about.s1.p11': 'So I decided to build the one I wish I\'d had. That\'s how MICI Tracker was born.',
+
+  'about.s2.title': 'The mission',
+  'about.s2.p1': 'At first, MICI Tracker was a personal project. I simply wanted to reduce the mental load of the disease and walk into my gastroenterologist\'s office with reliable information rather than hazy memories.',
+  'about.s2.p3': 'Today, the app is built around three pillars:',
+  'about.s2.li1': 'stool tracking;',
+  'about.s2.li2': 'food tracking;',
+  'about.s2.li3': 'treatment tracking.',
+  'about.s2.p4': 'The goal is simple: help you observe your disease daily and better understand how it evolves.',
+  'about.s2.p5': 'MICI Tracker does not replace a doctor or a diagnosis — it is simply a tool built by a patient, to help other patients regain a little control over a disease that often feels like it takes it away.',
+  'about.s2.p7': 'Finally, one thing felt essential to me: your data belongs to you. It is hosted in Europe, never resold and can be deleted at any time.',
+  'about.s2.quote': '"I didn\'t build the perfect app. I simply built the one I wish I\'d had the day I received my diagnosis."',
+
+  'about.s3.title': 'Get in touch',
+  'about.s3.p1': 'A question, a suggestion, a bug to report? Feel free to reach out.',
+
   // Privacy — header
   'privacy.title': 'Privacy policy',
   'privacy.date': 'Last updated: 6 July 2026',

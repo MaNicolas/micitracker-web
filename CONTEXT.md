@@ -10,16 +10,25 @@
 - **Node** : 22 (`.nvmrc`)
 
 ## Pages
-- `/` — Page d'accueil (`src/pages/index.astro`)
+- `/` — Page d'accueil avec hero, tagline, grille fonctionnalités, section Pourquoi, CTA, badge beta (`src/pages/index.astro`)
+- `/app` — Showcase de l'app avec screenshots dans phone frames, sections alternées gauche/droite, calendrier solo, modal résumé du jour (`src/pages/app.astro`)
+- `/about` — Page de présentation (stub) (`src/pages/about.astro`)
 - `/privacy` — Politique de confidentialité (`src/pages/privacy.astro`)
+
+## Assets
+- **Screenshots** : 11 captures dans `/public/screenshots/` (calendar, day-modal, stool, food, stats, meds, correlations, langs, custom, notifs, consult)
+- **Favicon** : icône MICI Tracker (`public/favicon.png`)
+
+## Layout & Navigation
+- Sidebar desktop fixe (240px) avec logo, navigation, sélecteur de langue
+- Mobile : burger menu en drawer avec overlay, flèche retour sur pages secondaires
+- Sélecteur de langue en bottom sheet sur mobile
+- Footer global avec navigation et contact
 
 ## Ajouter une langue
 1. Créer `src/i18n/xx.ts` (copier `fr.ts` et traduire)
 2. L'importer dans `src/i18n/index.ts`
 3. Ajouter l'option dans le `<select>` de `Layout.astro`
-
-## Bugs connus
-- [ ] **Burger menu mobile** : quand on scrolle la page, la sidebar scrolle aussi au lieu de rester fixe. À corriger dans `src/layouts/Layout.astro`.
 
 ## Backlog
 
@@ -29,6 +38,6 @@
 ### À explorer
 - [ ] Page CGU (Conditions Générales d'Utilisation)
 - [ ] Page mentions légales
-- [ ] Page de présentation — Nicolas MA, histoire du projet, pourquoi MICI Tracker
+- [ ] Compléter la page `/about` — Nicolas MA, histoire du projet, pourquoi MICI Tracker
 - [ ] Page partenaires — ACCU, AFA, associations MICI
 - [ ] Version web de l'app (consultation des données depuis un navigateur) — projet à part entière
