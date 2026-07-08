@@ -34,6 +34,7 @@ export default {
   'home.cta.btn2': 'About me',
   // Nav
   'nav.app': 'The app',
+  'nav.professionals': 'Professionals',
   'nav.about': 'About me',
   'footer.nav': 'Navigation',
   'footer.contact': 'Contact',
@@ -65,6 +66,38 @@ export default {
   'app.consult.title': 'Prepare my consultation',
   'app.consult.desc': 'Walk into your appointment prepared.<ul><li>Clinical questionnaires: MICI-Control, Harvey-Bradshaw, PRO-2 (Mayo)</li><li>PDF report with charts and history</li><li>Choose the period to cover</li></ul>',
 
+  // Professionals page
+  'pro.title': 'Healthcare professionals',
+  'pro.s1.title': 'A tool for your patients, data for your consultation',
+  'pro.s1.p1': 'MICI Tracker is a mobile app that allows your IBD patients to track their symptoms daily and generate structured reports before each appointment.',
+
+  'pro.s2.title': 'PDF reports ready for your consultation',
+  'pro.s2.p1': 'Before each appointment, your patient generates a comprehensive PDF report from the app:',
+  'pro.s2.li1': 'Stool history with Bristol scale classification',
+  'pro.s2.li2': 'Pain, fatigue, blood and mucus tracking',
+  'pro.s2.li3': 'Food diary and current treatments',
+
+  'pro.s3.title': 'Built-in clinical scores',
+  'pro.s3.p1': 'The app includes validated clinical questionnaires, completed directly by the patient:',
+  'pro.s3.li1': 'Harvey-Bradshaw Index (Crohn\'s disease)',
+  'pro.s3.li2': 'PRO-2 / Partial Mayo (ulcerative colitis)',
+  'pro.s3.li3': 'MICI-Control (disease control quality)',
+
+  'pro.s4.title': 'Built-in Bristol scale',
+  'pro.s4.p1': 'Every bowel movement is classified on the Bristol scale (types 1 to 7). Trends are visible on charts and in the PDF report, giving you an objective view of bowel transit evolution.',
+
+  'pro.s5.title': 'What it changes for you',
+  'pro.s5.li1': 'More efficient consultations with factual data rather than memories',
+  'pro.s5.li2': 'Better follow-up between appointments',
+  'pro.s5.li3': 'A patient who is an active participant in their care, engaged and informed',
+  'pro.s5.li4': 'Clinical scores already calculated when the patient arrives',
+
+  'pro.s6.p1': 'Patient data is hosted in Europe (Ireland), GDPR-compliant, and is never shared or resold.',
+
+  'pro.cta.title': 'Recommend MICI Tracker to your patients',
+  'pro.cta.p1': 'The app is free and available on Android and iOS.',
+  'pro.cta.btn': 'Discover the app',
+
   // About page
   'about.title': 'About me',
   'about.s1.title': 'My story',
@@ -76,7 +109,7 @@ export default {
   'about.s1.p9': 'So I looked for an app that would help me track all of this simply. But no luck: they just didn\'t match my needs.',
   'about.s1.p11': 'So I decided to build the one I wish I\'d had. That\'s how MICI Tracker was born.',
 
-  'about.s2.title': 'The mission',
+  'about.s2.title': 'Why MICI Tracker?',
   'about.s2.p1': 'At first, MICI Tracker was a personal project. I simply wanted to reduce the mental load of the disease and walk into my gastroenterologist\'s office with reliable information rather than hazy memories.',
   'about.s2.p3': 'Today, the app is built around three pillars:',
   'about.s2.li1': 'stool tracking;',

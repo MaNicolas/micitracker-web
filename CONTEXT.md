@@ -12,7 +12,8 @@
 ## Pages
 - `/` — Page d'accueil avec hero, tagline, grille fonctionnalités, section Pourquoi, CTA, badge beta (`src/pages/index.astro`)
 - `/app` — Showcase de l'app avec screenshots dans phone frames, sections alternées gauche/droite, calendrier solo, modal résumé du jour (`src/pages/app.astro`)
-- `/about` — Page de présentation (stub) (`src/pages/about.astro`)
+- `/professionals` — Page dédiée aux professionnels de santé : rapports PDF, scores cliniques, Bristol (`src/pages/professionals.astro`)
+- `/about` — Page de présentation : mon histoire, la mission, contact (`src/pages/about.astro`)
 - `/privacy` — Politique de confidentialité (`src/pages/privacy.astro`)
 
 ## Assets
@@ -38,6 +39,5 @@
 ### À explorer
 - [ ] Page CGU (Conditions Générales d'Utilisation)
 - [ ] Page mentions légales
-- [ ] Compléter la page `/about` — Nicolas MA, histoire du projet, pourquoi MICI Tracker
+- [x] ~~Compléter la page `/about` — Nicolas MA, histoire du projet, pourquoi MICI Tracker~~
 - [ ] Page partenaires — ACCU, AFA, associations MICI
-- [ ] Version web de l'app (consultation des données depuis un navigateur) — projet à part entière

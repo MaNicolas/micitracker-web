@@ -1,0 +1,143 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { t } from '../i18n/index';
+---
+
+<Layout title="Professionnels de santé">
+  <style>
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #2D6A4F;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #2D6A4F;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #D8F3DC;
+    }
+    p { font-size: 16px; line-height: 1.7; color: #1A1A2E; margin-bottom: 10px; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    li { font-size: 16px; line-height: 1.7; color: #1A1A2E; margin-bottom: 4px; }
+    .hero-subtitle {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1A1A2E;
+      margin-bottom: 0;
+    }
+    .screenshot {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 16px;
+      border: 1px solid #E5E7EB;
+    }
+    .screenshot-md {
+      max-width: 100%;
+    }
+    @media (max-width: 600px) {
+      .screenshot-md { max-width: 100%; }
+    }
+    .highlight-box {
+      background: #D8F3DC;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    .highlight-box p {
+      margin-bottom: 0;
+      font-weight: 500;
+      color: #2D6A4F;
+    }
+    .cta-section {
+      text-align: center;
+      padding: 8px 0;
+    }
+    .cta-section h2 {
+      border-bottom: none;
+      text-align: center;
+      font-size: 22px;
+    }
+    .cta-section p {
+      text-align: center;
+    }
+    .cta-btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 14px 32px;
+      background: #2D6A4F;
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: background 0.2s;
+    }
+    .cta-btn:hover {
+      background: #1B4332;
+    }
+    a { color: #2D6A4F; }
+  </style>
+
+  <h1 data-i18n="pro.title">{t('fr', 'pro.title')}</h1>
+
+  <!-- Accroche -->
+  <div class="card">
+    <h2 data-i18n="pro.s1.title">{t('fr', 'pro.s1.title')}</h2>
+    <p class="hero-subtitle" data-i18n="pro.s1.p1">{t('fr', 'pro.s1.p1')}</p>
+  </div>
+
+  <!-- Rapports PDF -->
+  <div class="card">
+    <h2 data-i18n="pro.s2.title">{t('fr', 'pro.s2.title')}</h2>
+    <p data-i18n="pro.s2.p1">{t('fr', 'pro.s2.p1')}</p>
+    <ul>
+      <li data-i18n="pro.s2.li1">{t('fr', 'pro.s2.li1')}</li>
+      <li data-i18n="pro.s2.li2">{t('fr', 'pro.s2.li2')}</li>
+      <li data-i18n="pro.s2.li3">{t('fr', 'pro.s2.li3')}</li>
+    </ul>
+    <img src="/screenshots/pdf-resume.png" alt="Rapport PDF — Résumé et évolution quotidienne" class="screenshot" />
+    <img src="/screenshots/pdf-meds.png" alt="Rapport PDF — Médicaments actifs" class="screenshot" />
+  </div>
+
+  <!-- Scores cliniques -->
+  <div class="card">
+    <h2 data-i18n="pro.s3.title">{t('fr', 'pro.s3.title')}</h2>
+    <p data-i18n="pro.s3.p1">{t('fr', 'pro.s3.p1')}</p>
+    <ul>
+      <li data-i18n="pro.s3.li1">{t('fr', 'pro.s3.li1')}</li>
+      <li data-i18n="pro.s3.li2">{t('fr', 'pro.s3.li2')}</li>
+      <li data-i18n="pro.s3.li3">{t('fr', 'pro.s3.li3')}</li>
+    </ul>
+    <img src="/screenshots/pdf-mici-control.png" alt="Score MICI-Control" class="screenshot screenshot-md" />
+    <img src="/screenshots/pdf-hbi.png" alt="Harvey Bradshaw Index" class="screenshot screenshot-md" />
+    <img src="/screenshots/pdf-pro2.png" alt="PRO-2 Mayo Score partiel" class="screenshot screenshot-md" />
+  </div>
+
+  <!-- Ce que ça change -->
+  <div class="card">
+    <h2 data-i18n="pro.s5.title">{t('fr', 'pro.s5.title')}</h2>
+    <ul>
+      <li data-i18n="pro.s5.li1">{t('fr', 'pro.s5.li1')}</li>
+      <li data-i18n="pro.s5.li2">{t('fr', 'pro.s5.li2')}</li>
+      <li data-i18n="pro.s5.li3">{t('fr', 'pro.s5.li3')}</li>
+      <li data-i18n="pro.s5.li4">{t('fr', 'pro.s5.li4')}</li>
+    </ul>
+  </div>
+
+  <!-- CTA -->
+  <div class="card cta-section">
+    <h2 data-i18n="pro.cta.title">{t('fr', 'pro.cta.title')}</h2>
+    <p data-i18n="pro.cta.p1">{t('fr', 'pro.cta.p1')}</p>
+    <a href="/app" class="cta-btn" data-i18n="pro.cta.btn">{t('fr', 'pro.cta.btn')}</a>
+  </div>
+</Layout>

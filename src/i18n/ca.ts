@@ -34,6 +34,7 @@ export default {
   'home.cta.btn2': 'Qui soc?',
   // Nav
   'nav.app': 'L\'aplicació',
+  'nav.professionals': 'Professionals',
   'nav.about': 'Qui soc?',
   'footer.nav': 'Navegació',
   'footer.contact': 'Contacte',
@@ -65,6 +66,38 @@ export default {
   'app.consult.title': 'Preparar la meva consulta',
   'app.consult.desc': 'Arribeu preparats a la vostra cita mèdica.<ul><li>Qüestionaris clínics: MICI-Control, Harvey-Bradshaw, PRO-2 (Mayo)</li><li>Informe PDF amb gràfics i historial</li><li>Trieu el període a cobrir</li></ul>',
 
+  // Professionals page
+  'pro.title': 'Professionals de la salut',
+  'pro.s1.title': 'Una eina per als vostres pacients, dades per a la vostra consulta',
+  'pro.s1.p1': 'MICI Tracker \u00e9s una aplicaci\u00f3 m\u00f2bil que permet als vostres pacients amb MII fer un seguiment diari dels seus s\u00edmptomes i generar informes estructurats abans de cada consulta.',
+
+  'pro.s2.title': 'Informes PDF a punt per a la consulta',
+  'pro.s2.p1': 'Abans de cada cita, el vostre pacient genera un informe PDF complet des de l\u2019aplicaci\u00f3:',
+  'pro.s2.li1': 'Historial de deposicions amb classificaci\u00f3 Bristol',
+  'pro.s2.li2': 'Seguiment de dolor, fatiga, sang i mucositats',
+  'pro.s2.li3': 'Diari alimentari i tractaments en curs',
+
+  'pro.s3.title': 'Puntuacions cl\u00edniques integrades',
+  'pro.s3.p1': 'L\u2019aplicaci\u00f3 inclou q\u00fcestionaris cl\u00ednics validats, emplenats directament pel pacient:',
+  'pro.s3.li1': '\u00cdndex de Harvey-Bradshaw (malaltia de Crohn)',
+  'pro.s3.li2': 'PRO-2 / Mayo parcial (colitis ulcerosa)',
+  'pro.s3.li3': 'MICI-Control (qualitat del control de la malaltia)',
+
+  'pro.s4.title': 'Escala de Bristol integrada',
+  'pro.s4.p1': 'Cada deposici\u00f3 es classifica segons l\u2019escala de Bristol (tipus 1 a 7). Les tend\u00e8ncies s\u00f3n visibles als gr\u00e0fics i a l\u2019informe PDF, oferint una visi\u00f3 objectiva de l\u2019evoluci\u00f3 del tr\u00e0nsit.',
+
+  'pro.s5.title': 'Qu\u00e8 canvia per a vost\u00e8',
+  'pro.s5.li1': 'Consultes m\u00e9s eficients amb dades factuals en lloc de records',
+  'pro.s5.li2': 'Millor seguiment entre cites',
+  'pro.s5.li3': 'Un pacient actor del seu seguiment, implicat i informat',
+  'pro.s5.li4': 'Puntuacions cl\u00edniques ja calculades a l\u2019arribada del pacient',
+
+  'pro.s6.p1': 'Les dades dels pacients estan allotjades a Europa (Irlanda), conformes al RGPD, i mai no es comparteixen ni es revenen.',
+
+  'pro.cta.title': 'Recomaneu MICI Tracker als vostres pacients',
+  'pro.cta.p1': 'L\u2019aplicaci\u00f3 \u00e9s gratu\u00efta i est\u00e0 disponible a Android i iOS.',
+  'pro.cta.btn': 'Descobrir l\u2019aplicaci\u00f3',
+
   // About page
   'about.title': 'Qui soc?',
   'about.s1.title': 'La meva història',
@@ -76,7 +109,7 @@ export default {
   'about.s1.p9': 'Així que vaig buscar una aplicació que m\'ajudés a fer un seguiment de tot això de manera senzilla. Però res a fer: simplement no s\'adaptaven a les meves necessitats.',
   'about.s1.p11': 'Així que vaig decidir crear la que m\'hauria agradat tenir. Així va néixer MICI Tracker.',
 
-  'about.s2.title': 'La missió',
+  'about.s2.title': 'Per què MICI Tracker?',
   'about.s2.p1': 'Al principi, MICI Tracker era un projecte personal. Simplement volia reduir la càrrega mental de la malaltia i arribar a la consulta del meu gastroenteròleg amb informació fiable en lloc de records aproximats.',
   'about.s2.p3': 'Avui, l\'aplicació es basa en tres pilars:',
   'about.s2.li1': 'el seguiment de les deposicions;',

@@ -34,6 +34,7 @@ export default {
   'home.cta.btn2': 'Qui suis-je ?',
   // Nav
   'nav.app': 'L\'application',
+  'nav.professionals': 'Professionnels',
   'nav.about': 'Qui suis-je ?',
   'footer.nav': 'Navigation',
   'footer.contact': 'Contact',
@@ -65,6 +66,38 @@ export default {
   'app.consult.title': 'Préparer ma consultation',
   'app.consult.desc': 'Arrivez préparé chez votre médecin.<ul><li>Questionnaires cliniques : MICI-Control, Harvey-Bradshaw, PRO-2 (Mayo)</li><li>Rapport PDF avec graphiques et historique</li><li>Choisissez la période à couvrir</li></ul>',
 
+  // Professionals page
+  'pro.title': 'Professionnels de sant\u00e9',
+  'pro.s1.title': 'Un outil pour vos patients, des donn\u00e9es pour votre consultation',
+  'pro.s1.p1': 'MICI Tracker est une application mobile qui permet \u00e0 vos patients atteints de MICI de suivre leurs sympt\u00f4mes au quotidien et de g\u00e9n\u00e9rer des rapports structur\u00e9s avant chaque consultation.',
+
+  'pro.s2.title': 'Rapports PDF pr\u00eats pour la consultation',
+  'pro.s2.p1': 'Avant chaque rendez-vous, votre patient g\u00e9n\u00e8re un rapport PDF complet depuis l\u2019application\u00a0:',
+  'pro.s2.li1': 'Historique des selles avec classification Bristol',
+  'pro.s2.li2': 'Suivi des douleurs, fatigue, sang et glaires',
+  'pro.s2.li3': 'Journal alimentaire et traitements en cours',
+
+  'pro.s3.title': 'Scores cliniques int\u00e9gr\u00e9s',
+  'pro.s3.p1': 'L\u2019application inclut les questionnaires cliniques valid\u00e9s, remplis directement par le patient\u00a0:',
+  'pro.s3.li1': 'Harvey-Bradshaw Index (maladie de Crohn)',
+  'pro.s3.li2': 'PRO-2 / Mayo partiel (rectocolite h\u00e9morragique)',
+  'pro.s3.li3': 'MICI-Control (qualit\u00e9 du contr\u00f4le de la maladie)',
+
+  'pro.s4.title': '\u00c9chelle de Bristol int\u00e9gr\u00e9e',
+  'pro.s4.p1': 'Chaque selle est classifi\u00e9e selon l\u2019\u00e9chelle de Bristol (types 1 \u00e0 7). Les tendances sont visibles sur les graphiques et dans le rapport PDF, vous offrant une vue objective de l\u2019\u00e9volution du transit.',
+
+  'pro.s5.title': 'Ce que \u00e7a change pour vous',
+  'pro.s5.li1': 'Des consultations plus efficaces avec des donn\u00e9es factuelles plut\u00f4t que des souvenirs',
+  'pro.s5.li2': 'Un meilleur suivi entre les rendez-vous',
+  'pro.s5.li3': 'Un patient acteur de son suivi, impliqu\u00e9 et inform\u00e9',
+  'pro.s5.li4': 'Des scores cliniques d\u00e9j\u00e0 calcul\u00e9s \u00e0 l\u2019arriv\u00e9e du patient',
+
+  'pro.s6.p1': 'Les donn\u00e9es des patients sont h\u00e9berg\u00e9es en Europe (Irlande), conformes au RGPD, et ne sont jamais partag\u00e9es ni revendues.',
+
+  'pro.cta.title': 'Recommandez MICI Tracker \u00e0 vos patients',
+  'pro.cta.p1': 'L\u2019application est gratuite et disponible sur Android et iOS.',
+  'pro.cta.btn': 'D\u00e9couvrir l\u2019application',
+
   // About page
   'about.title': 'Qui suis-je ?',
   'about.s1.title': 'Mon histoire',
@@ -76,7 +109,7 @@ export default {
   'about.s1.p9': 'J\'ai donc cherché une application qui m\'aiderait à suivre tout ça simplement. Mais rien à faire\u00a0: elles ne correspondaient tout simplement pas à mes besoins.',
   'about.s1.p11': 'Alors j\'ai décidé de créer celle que j\'aurais aimé avoir. C\'est comme ça qu\'est né MICI Tracker.',
 
-  'about.s2.title': 'La mission',
+  'about.s2.title': 'Pourquoi MICI Tracker ?',
   'about.s2.p1': 'Au départ, MICI Tracker était un projet personnel. Je voulais simplement réduire la charge mentale liée à la maladie et arriver chez mon gastro-entérologue avec des informations fiables plutôt qu\'avec des souvenirs approximatifs.',
   'about.s2.p3': 'Aujourd\'hui, l\'application repose sur trois piliers\u00a0:',
   'about.s2.li1': 'le suivi des selles\u00a0;',
