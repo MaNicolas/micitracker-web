@@ -72,10 +72,10 @@ export default {
   'pro.s1.p1': 'MICI Tracker est une application mobile qui permet \u00e0 vos patients atteints de MICI de suivre leurs sympt\u00f4mes au quotidien et de g\u00e9n\u00e9rer des rapports structur\u00e9s avant chaque consultation.',
 
   'pro.s2.title': 'Rapports PDF pr\u00eats pour la consultation',
-  'pro.s2.p1': 'Avant chaque rendez-vous, votre patient g\u00e9n\u00e8re un rapport PDF complet depuis l\u2019application\u00a0:',
+  'pro.s2.p1': 'Avant chaque rendez-vous, votre patient g\u00e9n\u00e8re un rapport PDF complet depuis l\u2019application. Il choisit la p\u00e9riode \u00e0 couvrir (2, 3, 5 semaines\u2026) et vous obtenez en un clin d\u2019\u0153il\u00a0:',
   'pro.s2.li1': 'Historique des selles avec classification Bristol',
-  'pro.s2.li2': 'Suivi des douleurs, fatigue, sang et glaires',
-  'pro.s2.li3': 'Journal alimentaire et traitements en cours',
+  'pro.s2.li2': '\u00c9volution quotidienne avec code couleur (nombre de selles, Bristol, sang)',
+  'pro.s2.li3': 'Traitements actifs sur la p\u00e9riode',
 
   'pro.s3.title': 'Scores cliniques int\u00e9gr\u00e9s',
   'pro.s3.p1': 'L\u2019application inclut les questionnaires cliniques valid\u00e9s, remplis directement par le patient\u00a0:',

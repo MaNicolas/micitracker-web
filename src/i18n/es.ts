@@ -72,10 +72,10 @@ export default {
   'pro.s1.p1': 'MICI Tracker es una aplicaci\u00f3n m\u00f3vil que permite a sus pacientes con EII hacer un seguimiento diario de sus s\u00edntomas y generar informes estructurados antes de cada consulta.',
 
   'pro.s2.title': 'Informes PDF listos para la consulta',
-  'pro.s2.p1': 'Antes de cada cita, su paciente genera un informe PDF completo desde la aplicaci\u00f3n:',
+  'pro.s2.p1': 'Antes de cada cita, su paciente genera un informe PDF completo desde la aplicaci\u00f3n. Elige el per\u00edodo a cubrir (2, 3, 5 semanas\u2026) y usted obtiene de un vistazo:',
   'pro.s2.li1': 'Historial de deposiciones con clasificaci\u00f3n Bristol',
-  'pro.s2.li2': 'Seguimiento de dolor, fatiga, sangre y mucosidades',
-  'pro.s2.li3': 'Diario alimentario y tratamientos en curso',
+  'pro.s2.li2': 'Evoluci\u00f3n diaria con c\u00f3digo de colores (n\u00famero de deposiciones, Bristol, sangre)',
+  'pro.s2.li3': 'Tratamientos activos en el per\u00edodo',
 
   'pro.s3.title': 'Puntuaciones cl\u00ednicas integradas',
   'pro.s3.p1': 'La aplicaci\u00f3n incluye cuestionarios cl\u00ednicos validados, completados directamente por el paciente:',

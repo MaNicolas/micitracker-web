@@ -72,10 +72,10 @@ export default {
   'pro.s1.p1': 'MICI Tracker is a mobile app that allows your IBD patients to track their symptoms daily and generate structured reports before each appointment.',
 
   'pro.s2.title': 'PDF reports ready for your consultation',
-  'pro.s2.p1': 'Before each appointment, your patient generates a comprehensive PDF report from the app:',
+  'pro.s2.p1': 'Before each appointment, your patient generates a comprehensive PDF report from the app. They choose the period to cover (2, 3, 5 weeks\u2026) and you get at a glance:',
   'pro.s2.li1': 'Stool history with Bristol scale classification',
-  'pro.s2.li2': 'Pain, fatigue, blood and mucus tracking',
-  'pro.s2.li3': 'Food diary and current treatments',
+  'pro.s2.li2': 'Daily evolution with colour coding (stool count, Bristol, blood)',
+  'pro.s2.li3': 'Active treatments over the period',
 
   'pro.s3.title': 'Built-in clinical scores',
   'pro.s3.p1': 'The app includes validated clinical questionnaires, completed directly by the patient:',

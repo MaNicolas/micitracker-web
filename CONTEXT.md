@@ -17,7 +17,7 @@
 - `/privacy` — Politique de confidentialité (`src/pages/privacy.astro`)
 
 ## Assets
-- **Screenshots** : 11 captures dans `/public/screenshots/` (calendar, day-modal, stool, food, stats, meds, correlations, langs, custom, notifs, consult)
+- **Screenshots** : 11 captures app dans `/public/screenshots/` (calendar, day-modal, stool, food, stats, meds, correlations, langs, custom, notifs, consult) + 5 captures PDF (pdf-resume, pdf-meds, pdf-mici-control, pdf-hbi, pdf-pro2)
 - **Favicon** : icône MICI Tracker (`public/favicon.png`)
 
 ## Layout & Navigation
@@ -41,3 +41,11 @@
 - [ ] Page mentions légales
 - [x] ~~Compléter la page `/about` — Nicolas MA, histoire du projet, pourquoi MICI Tracker~~
 - [ ] Page partenaires — ACCU, AFA, associations MICI
+
+### Améliorations rapport PDF (app mobile)
+- [ ] Répartition Bristol — histogramme ou camembert des types 1-7 sur la période
+- [ ] Tendance hebdomadaire — nombre moyen de selles/semaine, % de jours avec sang
+- [ ] Évolution du poids — courbe sur la période (nécessite tracking du poids dans l'app)
+- [ ] Symptômes nocturnes — nombre de nuits avec réveil lié à la maladie
+- [ ] Frise chronologique des traitements — superposée au graphique d'évolution
+- [ ] Résultats biologiques (calprotectine, CRP) — sur la même timeline que les symptômes

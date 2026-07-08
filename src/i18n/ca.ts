@@ -72,10 +72,10 @@ export default {
   'pro.s1.p1': 'MICI Tracker \u00e9s una aplicaci\u00f3 m\u00f2bil que permet als vostres pacients amb MII fer un seguiment diari dels seus s\u00edmptomes i generar informes estructurats abans de cada consulta.',
 
   'pro.s2.title': 'Informes PDF a punt per a la consulta',
-  'pro.s2.p1': 'Abans de cada cita, el vostre pacient genera un informe PDF complet des de l\u2019aplicaci\u00f3:',
+  'pro.s2.p1': 'Abans de cada cita, el vostre pacient genera un informe PDF complet des de l\u2019aplicaci\u00f3. Tria el per\u00edode a cobrir (2, 3, 5 setmanes\u2026) i vost\u00e8 obt\u00e9 d\u2019un cop d\u2019ull:',
   'pro.s2.li1': 'Historial de deposicions amb classificaci\u00f3 Bristol',
-  'pro.s2.li2': 'Seguiment de dolor, fatiga, sang i mucositats',
-  'pro.s2.li3': 'Diari alimentari i tractaments en curs',
+  'pro.s2.li2': 'Evoluci\u00f3 di\u00e0ria amb codi de colors (nombre de deposicions, Bristol, sang)',
+  'pro.s2.li3': 'Tractaments actius durant el per\u00edode',
 
   'pro.s3.title': 'Puntuacions cl\u00edniques integrades',
   'pro.s3.p1': 'L\u2019aplicaci\u00f3 inclou q\u00fcestionaris cl\u00ednics validats, emplenats directament pel pacient:',
