@@ -7,7 +7,7 @@
 - **Déploiement** : GitHub Actions automatique à chaque push sur `main`
 - **i18n** : FR / EN / ES / CA via fichiers `src/i18n/{lang}.ts` + `data-i18n` + localStorage (côté client)
 - **Layout** : sidebar fixe partagée sur toutes les pages (`src/layouts/Layout.astro`)
-- **Node** : 22 (`.nvmrc`)
+- **Node** : 22 (`.nvmrc`) — lancer `nvm use` avant `npm run dev`
 
 ## Pages
 - `/` — Page d'accueil avec hero, tagline, grille fonctionnalités, section Pourquoi, CTA, badge beta (`src/pages/index.astro`)
