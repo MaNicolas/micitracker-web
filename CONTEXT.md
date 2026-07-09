@@ -43,7 +43,7 @@
 - [ ] Page partenaires — ACCU, AFA, associations MICI
 
 ### Améliorations rapport PDF (app mobile)
-- [ ] Répartition Bristol — histogramme ou camembert des types 1-7 sur la période
+- [x] ~~Répartition Bristol — histogramme ou camembert des types 1-7 sur la période~~
 - [ ] Tendance hebdomadaire — nombre moyen de selles/semaine, % de jours avec sang
 - [ ] Évolution du poids — courbe sur la période (nécessite tracking du poids dans l'app)
 - [ ] Symptômes nocturnes — nombre de nuits avec réveil lié à la maladie
