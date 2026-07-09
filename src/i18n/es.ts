@@ -27,7 +27,7 @@ export default {
   'home.feat4.desc': 'Visualiza el inicio y el fin de tus tratamientos en la misma curva que tus síntomas. Ves los hechos, los comentas con tu médico.',
   // Why section
   'home.why.title': '¿Por qué MICI Tracker?',
-  'home.why.text': 'Creada por un paciente con EII, para pacientes con EII. MICI Tracker quita la carga mental de la enfermedad: te ayuda a anotar los hechos, no a interpretarlos por ti. Tus datos permanecen en Europa, nada se usa para diagnosticarte.',
+  'home.why.text': 'Creada por un paciente con EII, para pacientes con EII. MICI Tracker quita la carga mental de la enfermedad: te ayuda a anotar los hechos, sin interpretarlos por ti. No pretende sustituir a tu médico. Por último, tus datos permanecen en Europa.',
   // CTA section
   'home.cta.title': '¿Quieres saber más?',
   'home.cta.btn1': 'Descubrir la aplicación',

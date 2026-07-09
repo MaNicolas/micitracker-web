@@ -27,7 +27,7 @@ export default {
   'home.feat4.desc': 'Visualisez le début et l\'arrêt de vos traitements sur la même courbe que vos symptômes. Vous voyez les faits, vous en discutez avec votre médecin.',
   // Why section
   'home.why.title': 'Pourquoi MICI Tracker ?',
-  'home.why.text': 'Créée par un patient MICI, pour les patients MICI. MICI Tracker enlève la charge mentale autour de la maladie\u00a0: elle vous aide à noter les faits, pas à les interpréter à votre place. Vos données restent en Europe, rien n\'est utilisé pour vous diagnostiquer.',
+  'home.why.text': 'Créée par un patient MICI, pour les patients MICI. MICI Tracker enlève la charge mentale autour de la maladie\u00a0: elle vous aide à noter les faits, sans les interpréter à votre place. Elle ne prétend pas remplacer votre médecin. Enfin, vos données restent en Europe.',
   // CTA section
   'home.cta.title': 'Envie d\'en savoir plus ?',
   'home.cta.btn1': 'Découvrir l\'application',

@@ -27,7 +27,7 @@ export default {
   'home.feat4.desc': 'Visualitzeu l\'inici i la fi dels vostres tractaments a la mateixa corba que els vostres símptomes. Veieu els fets, en parleu amb el vostre metge.',
   // Why section
   'home.why.title': 'Per què MICI Tracker?',
-  'home.why.text': 'Creada per un pacient amb MII, per a pacients amb MII. MICI Tracker treu la càrrega mental de la malaltia: us ajuda a anotar els fets, no a interpretar-los per vosaltres. Les vostres dades es queden a Europa, res no s\'utilitza per diagnosticar-vos.',
+  'home.why.text': 'Creada per un pacient amb MII, per a pacients amb MII. MICI Tracker treu la càrrega mental de la malaltia: us ajuda a anotar els fets, sense interpretar-los per vosaltres. No pretén substituir el vostre metge. Finalment, les vostres dades es queden a Europa.',
   // CTA section
   'home.cta.title': 'Voleu saber-ne més?',
   'home.cta.btn1': 'Descobrir l\'aplicació',

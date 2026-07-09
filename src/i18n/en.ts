@@ -27,7 +27,7 @@ export default {
   'home.feat4.desc': 'See your treatment start and stop dates on the same chart as your symptoms. You see the facts, you discuss them with your doctor.',
   // Why section
   'home.why.title': 'Why MICI Tracker?',
-  'home.why.text': 'Built by an IBD patient, for IBD patients. MICI Tracker lifts the mental load around your disease: it helps you record facts, not interpret them for you. Your data stays in Europe, nothing is used to diagnose you.',
+  'home.why.text': 'Built by an IBD patient, for IBD patients. MICI Tracker lifts the mental load around your disease: it helps you record facts, without interpreting them for you. It does not claim to replace your doctor. Finally, your data stays in Europe.',
   // CTA section
   'home.cta.title': 'Want to learn more?',
   'home.cta.btn1': 'Discover the app',
