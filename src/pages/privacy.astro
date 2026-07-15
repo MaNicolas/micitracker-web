@@ -98,19 +98,18 @@ import { t } from '../i18n/index';
     <p data-i18n="privacy.s5.p1">{t('fr', 'privacy.s5.p1')}</p>
   </div>
 
-  <!-- Section 6 -->
-  <div class="card">
+  <!-- Section 6 - Delete account -->
+  <div class="card" id="delete-account">
     <h2 data-i18n="privacy.s6.title">{t('fr', 'privacy.s6.title')}</h2>
     <p data-i18n="privacy.s6.intro">{t('fr', 'privacy.s6.intro')}</p>
     <ul>
-      <li data-i18n="privacy.s6.access" set:html={t('fr', 'privacy.s6.access')} />
-      <li data-i18n="privacy.s6.rectification" set:html={t('fr', 'privacy.s6.rectification')} />
-      <li data-i18n="privacy.s6.erasure" set:html={t('fr', 'privacy.s6.erasure')} />
-      <li data-i18n="privacy.s6.portability" set:html={t('fr', 'privacy.s6.portability')} />
-      <li data-i18n="privacy.s6.opposition" set:html={t('fr', 'privacy.s6.opposition')} />
+      <li data-i18n="privacy.s6.delete" set:html={t('fr', 'privacy.s6.delete')} />
+      <li data-i18n="privacy.s6.reset" set:html={t('fr', 'privacy.s6.reset')} />
     </ul>
-    <p data-i18n="privacy.s6.contact" set:html={t('fr', 'privacy.s6.contact')} />
-    <p data-i18n="privacy.s6.authority" set:html={t('fr', 'privacy.s6.authority')} />
+    <p data-i18n="privacy.s6.immediate">{t('fr', 'privacy.s6.immediate')}</p>
+    <div style="text-align:center; margin-top:16px;">
+      <img src="/screenshots/delete-account.jpeg" alt={t('fr', 'privacy.s6.imgAlt')} data-i18n-alt="privacy.s6.imgAlt" style="max-width:360px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+    </div>
   </div>
 
   <!-- Section 7 -->
@@ -118,17 +117,32 @@ import { t } from '../i18n/index';
     <h2 data-i18n="privacy.s7.title">{t('fr', 'privacy.s7.title')}</h2>
     <p data-i18n="privacy.s7.intro">{t('fr', 'privacy.s7.intro')}</p>
     <ul>
-      <li data-i18n="privacy.s7.li1">{t('fr', 'privacy.s7.li1')}</li>
-      <li data-i18n="privacy.s7.li2">{t('fr', 'privacy.s7.li2')}</li>
-      <li data-i18n="privacy.s7.li3">{t('fr', 'privacy.s7.li3')}</li>
-      <li data-i18n="privacy.s7.li4">{t('fr', 'privacy.s7.li4')}</li>
+      <li data-i18n="privacy.s7.access" set:html={t('fr', 'privacy.s7.access')} />
+      <li data-i18n="privacy.s7.rectification" set:html={t('fr', 'privacy.s7.rectification')} />
+      <li data-i18n="privacy.s7.erasure" set:html={t('fr', 'privacy.s7.erasure')} />
+      <li data-i18n="privacy.s7.portability" set:html={t('fr', 'privacy.s7.portability')} />
+      <li data-i18n="privacy.s7.opposition" set:html={t('fr', 'privacy.s7.opposition')} />
     </ul>
+    <p data-i18n="privacy.s7.contact" set:html={t('fr', 'privacy.s7.contact')} />
+    <p data-i18n="privacy.s7.authority" set:html={t('fr', 'privacy.s7.authority')} />
   </div>
 
   <!-- Section 8 -->
   <div class="card">
     <h2 data-i18n="privacy.s8.title">{t('fr', 'privacy.s8.title')}</h2>
     <p data-i18n="privacy.s8.intro">{t('fr', 'privacy.s8.intro')}</p>
+    <ul>
+      <li data-i18n="privacy.s8.li1">{t('fr', 'privacy.s8.li1')}</li>
+      <li data-i18n="privacy.s8.li2">{t('fr', 'privacy.s8.li2')}</li>
+      <li data-i18n="privacy.s8.li3">{t('fr', 'privacy.s8.li3')}</li>
+      <li data-i18n="privacy.s8.li4">{t('fr', 'privacy.s8.li4')}</li>
+    </ul>
+  </div>
+
+  <!-- Section 9 -->
+  <div class="card">
+    <h2 data-i18n="privacy.s9.title">{t('fr', 'privacy.s9.title')}</h2>
+    <p data-i18n="privacy.s9.intro">{t('fr', 'privacy.s9.intro')}</p>
     <p>
       <strong>Nicolas MA</strong><br/>
       <a href="mailto:contact@micitracker.com">contact@micitracker.com</a>

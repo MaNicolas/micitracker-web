@@ -163,25 +163,33 @@ export default {
   'privacy.s5.p1': "Vos données sont conservées tant que votre compte est actif. En cas de suppression de votre compte, toutes vos données (compte, journal, profil) sont définitivement supprimées dans un délai de 30 jours.",
 
   // Section 6
-  'privacy.s6.title': '6. Vos droits',
-  'privacy.s6.intro': 'Conformément au RGPD, vous disposez des droits suivants :',
-  'privacy.s6.access': "<strong>Droit d'accès</strong> : obtenir une copie de vos données",
-  'privacy.s6.rectification': '<strong>Droit de rectification</strong> : corriger vos données',
-  'privacy.s6.erasure': "<strong>Droit à l'effacement</strong> : supprimer votre compte et toutes vos données depuis l'application (Profil → Supprimer mon compte)",
-  'privacy.s6.portability': '<strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré',
-  'privacy.s6.opposition': "<strong>Droit d'opposition</strong> : vous opposer à un traitement",
-  'privacy.s6.contact': 'Pour exercer vos droits, contactez-nous à : <a href="mailto:contact@micitracker.com">contact@micitracker.com</a>',
-  'privacy.s6.authority': 'Vous pouvez également introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank">CNIL</a>.',
+  'privacy.s6.title': '6. Supprimer votre compte ou vos données',
+  'privacy.s6.intro': 'Vous pouvez à tout moment supprimer votre compte ou réinitialiser vos données directement depuis l\'application :',
+  'privacy.s6.delete': '<strong>Supprimer mon compte</strong> : dans Compte → Confidentialité → « Supprimer mon compte ». Cette action supprime définitivement votre compte, votre profil et toutes vos données (selles, repas, médicaments, coloscopies, questions).',
+  'privacy.s6.reset': '<strong>Réinitialiser mes données</strong> : dans Compte → Confidentialité → « Réinitialiser mes données ». Cette action supprime vos données de suivi (selles, repas, médicaments, coloscopies, questions) tout en conservant votre compte et votre profil.',
+  'privacy.s6.immediate': 'Ces actions sont immédiates et s\'appliquent à la fois sur votre appareil (SQLite) et sur nos serveurs (Supabase).',
+  'privacy.s6.imgAlt': 'Capture d\'écran de la section Confidentialité dans l\'application MICI Tracker',
 
   // Section 7
-  'privacy.s7.title': '7. Sécurité',
-  'privacy.s7.intro': 'Nous mettons en œuvre les mesures suivantes pour protéger vos données :',
-  'privacy.s7.li1': 'Authentification sécurisée (email/mot de passe, OAuth Google)',
-  'privacy.s7.li2': 'Isolation des données par utilisateur (Row Level Security Supabase)',
-  'privacy.s7.li3': 'Communications chiffrées (HTTPS/TLS)',
-  'privacy.s7.li4': 'Suppression définitive des données à la fermeture du compte',
+  'privacy.s7.title': '7. Vos droits',
+  'privacy.s7.intro': 'Conformément au RGPD, vous disposez des droits suivants :',
+  'privacy.s7.access': "<strong>Droit d'accès</strong> : obtenir une copie de vos données",
+  'privacy.s7.rectification': '<strong>Droit de rectification</strong> : corriger vos données',
+  'privacy.s7.erasure': "<strong>Droit à l'effacement</strong> : supprimer votre compte et toutes vos données depuis l'application (Profil → Supprimer mon compte)",
+  'privacy.s7.portability': '<strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré',
+  'privacy.s7.opposition': "<strong>Droit d'opposition</strong> : vous opposer à un traitement",
+  'privacy.s7.contact': 'Pour exercer vos droits, contactez-nous à : <a href="mailto:contact@micitracker.com">contact@micitracker.com</a>',
+  'privacy.s7.authority': 'Vous pouvez également introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank">CNIL</a>.',
 
   // Section 8
-  'privacy.s8.title': '8. Contact',
-  'privacy.s8.intro': 'Pour toute question relative à cette politique ou à vos données personnelles :',
+  'privacy.s8.title': '8. Sécurité',
+  'privacy.s8.intro': 'Nous mettons en œuvre les mesures suivantes pour protéger vos données :',
+  'privacy.s8.li1': 'Authentification sécurisée (email/mot de passe, OAuth Google)',
+  'privacy.s8.li2': 'Isolation des données par utilisateur (Row Level Security Supabase)',
+  'privacy.s8.li3': 'Communications chiffrées (HTTPS/TLS)',
+  'privacy.s8.li4': 'Suppression définitive des données à la fermeture du compte',
+
+  // Section 9
+  'privacy.s9.title': '9. Contact',
+  'privacy.s9.intro': 'Pour toute question relative à cette politique ou à vos données personnelles :',
 };

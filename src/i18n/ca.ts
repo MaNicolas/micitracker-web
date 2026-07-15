@@ -163,25 +163,33 @@ export default {
   'privacy.s5.p1': "Les seves dades es conserven mentre el seu compte estigui actiu. En cas d'eliminació del compte, totes les seves dades (compte, diari, perfil) s'eliminen definitivament en un termini de 30 dies.",
 
   // Section 6
-  'privacy.s6.title': '6. Els seus drets',
-  'privacy.s6.intro': 'De conformitat amb el RGPD, vostè disposa dels drets següents:',
-  'privacy.s6.access': "<strong>Dret d'accés</strong>: obtenir una còpia de les seves dades",
-  'privacy.s6.rectification': '<strong>Dret de rectificació</strong>: corregir les seves dades',
-  'privacy.s6.erasure': "<strong>Dret de supressió</strong>: eliminar el seu compte i totes les seves dades des de l'aplicació (Perfil → Eliminar el meu compte)",
-  'privacy.s6.portability': '<strong>Dret a la portabilitat</strong>: rebre les seves dades en un format estructurat',
-  'privacy.s6.opposition': "<strong>Dret d'oposició</strong>: oposar-se a un tractament",
-  'privacy.s6.contact': "Per exercir els seus drets, contacti'ns a: <a href=\"mailto:contact@micitracker.com\">contact@micitracker.com</a>",
-  'privacy.s6.authority': 'També pot presentar una reclamació davant l\'<a href="https://apdcat.gencat.cat" target="_blank">APDCAT</a> (Autoritat Catalana de Protecció de Dades).',
+  'privacy.s6.title': '6. Eliminar el seu compte o les seves dades',
+  'privacy.s6.intro': "Pot en qualsevol moment eliminar el seu compte o reinicialitzar les seves dades directament des de l'aplicació:",
+  'privacy.s6.delete': '<strong>Eliminar el meu compte</strong>: a Compte → Privacitat → «Eliminar el meu compte». Aquesta acció elimina definitivament el seu compte, el seu perfil i totes les seves dades (deposicions, àpats, medicaments, colonoscòpies, preguntes).',
+  'privacy.s6.reset': '<strong>Reinicialitzar les meves dades</strong>: a Compte → Privacitat → «Reinicialitzar les meves dades». Aquesta acció elimina les seves dades de seguiment (deposicions, àpats, medicaments, colonoscòpies, preguntes) conservant el seu compte i el seu perfil.',
+  'privacy.s6.immediate': "Aquestes accions són immediates i s'apliquen tant al seu dispositiu (SQLite) com als nostres servidors (Supabase).",
+  'privacy.s6.imgAlt': "Captura de pantalla de la secció Privacitat a l'aplicació MICI Tracker",
 
   // Section 7
-  'privacy.s7.title': '7. Seguretat',
-  'privacy.s7.intro': 'Implementem les mesures següents per protegir les seves dades:',
-  'privacy.s7.li1': 'Autenticació segura (correu/contrasenya, OAuth Google)',
-  'privacy.s7.li2': 'Aïllament de dades per usuari (Row Level Security de Supabase)',
-  'privacy.s7.li3': 'Comunicacions xifrades (HTTPS/TLS)',
-  'privacy.s7.li4': 'Eliminació definitiva de les dades en tancar el compte',
+  'privacy.s7.title': '7. Els seus drets',
+  'privacy.s7.intro': 'De conformitat amb el RGPD, vostè disposa dels drets següents:',
+  'privacy.s7.access': "<strong>Dret d'accés</strong>: obtenir una còpia de les seves dades",
+  'privacy.s7.rectification': '<strong>Dret de rectificació</strong>: corregir les seves dades',
+  'privacy.s7.erasure': "<strong>Dret de supressió</strong>: eliminar el seu compte i totes les seves dades des de l'aplicació (Perfil → Eliminar el meu compte)",
+  'privacy.s7.portability': '<strong>Dret a la portabilitat</strong>: rebre les seves dades en un format estructurat',
+  'privacy.s7.opposition': "<strong>Dret d'oposició</strong>: oposar-se a un tractament",
+  'privacy.s7.contact': "Per exercir els seus drets, contacti'ns a: <a href=\"mailto:contact@micitracker.com\">contact@micitracker.com</a>",
+  'privacy.s7.authority': 'També pot presentar una reclamació davant l\'<a href="https://apdcat.gencat.cat" target="_blank">APDCAT</a> (Autoritat Catalana de Protecció de Dades).',
 
   // Section 8
-  'privacy.s8.title': '8. Contacte',
-  'privacy.s8.intro': 'Per a qualsevol pregunta relacionada amb aquesta política o amb les seves dades personals:',
+  'privacy.s8.title': '8. Seguretat',
+  'privacy.s8.intro': 'Implementem les mesures següents per protegir les seves dades:',
+  'privacy.s8.li1': 'Autenticació segura (correu/contrasenya, OAuth Google)',
+  'privacy.s8.li2': 'Aïllament de dades per usuari (Row Level Security de Supabase)',
+  'privacy.s8.li3': 'Comunicacions xifrades (HTTPS/TLS)',
+  'privacy.s8.li4': 'Eliminació definitiva de les dades en tancar el compte',
+
+  // Section 9
+  'privacy.s9.title': '9. Contacte',
+  'privacy.s9.intro': 'Per a qualsevol pregunta relacionada amb aquesta política o amb les seves dades personals:',
 };

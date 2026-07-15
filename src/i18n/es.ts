@@ -163,25 +163,33 @@ export default {
   'privacy.s5.p1': 'Sus datos se conservan mientras su cuenta esté activa. En caso de eliminación de su cuenta, todos sus datos (cuenta, diario, perfil) se eliminan definitivamente en un plazo de 30 días.',
 
   // Section 6
-  'privacy.s6.title': '6. Sus derechos',
-  'privacy.s6.intro': 'De conformidad con el RGPD, usted dispone de los siguientes derechos:',
-  'privacy.s6.access': '<strong>Derecho de acceso</strong>: obtener una copia de sus datos',
-  'privacy.s6.rectification': '<strong>Derecho de rectificación</strong>: corregir sus datos',
-  'privacy.s6.erasure': '<strong>Derecho de supresión</strong>: eliminar su cuenta y todos sus datos desde la aplicación (Perfil → Eliminar mi cuenta)',
-  'privacy.s6.portability': '<strong>Derecho a la portabilidad</strong>: recibir sus datos en un formato estructurado',
-  'privacy.s6.opposition': '<strong>Derecho de oposición</strong>: oponerse a un tratamiento',
-  'privacy.s6.contact': 'Para ejercer sus derechos, contáctenos en: <a href="mailto:contact@micitracker.com">contact@micitracker.com</a>',
-  'privacy.s6.authority': 'También puede presentar una reclamación ante la <a href="https://www.aepd.es" target="_blank">AEPD</a> (Agencia Española de Protección de Datos).',
+  'privacy.s6.title': '6. Eliminar su cuenta o sus datos',
+  'privacy.s6.intro': 'Puede en cualquier momento eliminar su cuenta o reinicializar sus datos directamente desde la aplicación:',
+  'privacy.s6.delete': '<strong>Eliminar mi cuenta</strong>: en Cuenta → Privacidad → «Eliminar mi cuenta». Esta acción elimina definitivamente su cuenta, su perfil y todos sus datos (deposiciones, comidas, medicamentos, colonoscopias, preguntas).',
+  'privacy.s6.reset': '<strong>Reinicializar mis datos</strong>: en Cuenta → Privacidad → «Reinicializar mis datos». Esta acción elimina sus datos de seguimiento (deposiciones, comidas, medicamentos, colonoscopias, preguntas) conservando su cuenta y su perfil.',
+  'privacy.s6.immediate': 'Estas acciones son inmediatas y se aplican tanto en su dispositivo (SQLite) como en nuestros servidores (Supabase).',
+  'privacy.s6.imgAlt': 'Captura de pantalla de la sección Privacidad en la aplicación MICI Tracker',
 
   // Section 7
-  'privacy.s7.title': '7. Seguridad',
-  'privacy.s7.intro': 'Implementamos las siguientes medidas para proteger sus datos:',
-  'privacy.s7.li1': 'Autenticación segura (correo/contraseña, OAuth Google)',
-  'privacy.s7.li2': 'Aislamiento de datos por usuario (Row Level Security de Supabase)',
-  'privacy.s7.li3': 'Comunicaciones cifradas (HTTPS/TLS)',
-  'privacy.s7.li4': 'Eliminación definitiva de los datos al cerrar la cuenta',
+  'privacy.s7.title': '7. Sus derechos',
+  'privacy.s7.intro': 'De conformidad con el RGPD, usted dispone de los siguientes derechos:',
+  'privacy.s7.access': '<strong>Derecho de acceso</strong>: obtener una copia de sus datos',
+  'privacy.s7.rectification': '<strong>Derecho de rectificación</strong>: corregir sus datos',
+  'privacy.s7.erasure': '<strong>Derecho de supresión</strong>: eliminar su cuenta y todos sus datos desde la aplicación (Perfil → Eliminar mi cuenta)',
+  'privacy.s7.portability': '<strong>Derecho a la portabilidad</strong>: recibir sus datos en un formato estructurado',
+  'privacy.s7.opposition': '<strong>Derecho de oposición</strong>: oponerse a un tratamiento',
+  'privacy.s7.contact': 'Para ejercer sus derechos, contáctenos en: <a href="mailto:contact@micitracker.com">contact@micitracker.com</a>',
+  'privacy.s7.authority': 'También puede presentar una reclamación ante la <a href="https://www.aepd.es" target="_blank">AEPD</a> (Agencia Española de Protección de Datos).',
 
   // Section 8
-  'privacy.s8.title': '8. Contacto',
-  'privacy.s8.intro': 'Para cualquier pregunta relacionada con esta política o con sus datos personales:',
+  'privacy.s8.title': '8. Seguridad',
+  'privacy.s8.intro': 'Implementamos las siguientes medidas para proteger sus datos:',
+  'privacy.s8.li1': 'Autenticación segura (correo/contraseña, OAuth Google)',
+  'privacy.s8.li2': 'Aislamiento de datos por usuario (Row Level Security de Supabase)',
+  'privacy.s8.li3': 'Comunicaciones cifradas (HTTPS/TLS)',
+  'privacy.s8.li4': 'Eliminación definitiva de los datos al cerrar la cuenta',
+
+  // Section 9
+  'privacy.s9.title': '9. Contacto',
+  'privacy.s9.intro': 'Para cualquier pregunta relacionada con esta política o con sus datos personales:',
 };

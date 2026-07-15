@@ -163,25 +163,33 @@ export default {
   'privacy.s5.p1': 'Your data is retained for as long as your account is active. If your account is deleted, all your data (account, journal, profile) will be permanently deleted within 30 days.',
 
   // Section 6
-  'privacy.s6.title': '6. Your rights',
-  'privacy.s6.intro': 'In accordance with the GDPR, you have the following rights:',
-  'privacy.s6.access': '<strong>Right of access</strong>: obtain a copy of your data',
-  'privacy.s6.rectification': '<strong>Right of rectification</strong>: correct your data',
-  'privacy.s6.erasure': '<strong>Right of erasure</strong>: delete your account and all your data from the app (Profile → Delete my account)',
-  'privacy.s6.portability': '<strong>Right to data portability</strong>: receive your data in a structured format',
-  'privacy.s6.opposition': '<strong>Right to object</strong>: object to processing',
-  'privacy.s6.contact': 'To exercise your rights, contact us at: <a href="mailto:contact@micitracker.com">contact@micitracker.com</a>',
-  'privacy.s6.authority': 'You can also lodge a complaint with the <a href="https://ico.org.uk" target="_blank">ICO</a> (Information Commissioner\'s Office).',
+  'privacy.s6.title': '6. Delete your account or your data',
+  'privacy.s6.intro': 'You can at any time delete your account or reset your data directly from the app:',
+  'privacy.s6.delete': '<strong>Delete my account</strong>: in Account → Privacy → "Delete my account". This action permanently deletes your account, your profile and all your data (stool logs, meals, medications, colonoscopies, questions).',
+  'privacy.s6.reset': '<strong>Reset my data</strong>: in Account → Privacy → "Reset my data". This action deletes your tracking data (stool logs, meals, medications, colonoscopies, questions) while keeping your account and profile.',
+  'privacy.s6.immediate': 'These actions are immediate and apply both on your device (SQLite) and on our servers (Supabase).',
+  'privacy.s6.imgAlt': 'Screenshot of the Privacy section in the MICI Tracker app',
 
   // Section 7
-  'privacy.s7.title': '7. Security',
-  'privacy.s7.intro': 'We implement the following measures to protect your data:',
-  'privacy.s7.li1': 'Secure authentication (email/password, Google OAuth)',
-  'privacy.s7.li2': 'Per-user data isolation (Supabase Row Level Security)',
-  'privacy.s7.li3': 'Encrypted communications (HTTPS/TLS)',
-  'privacy.s7.li4': 'Permanent data deletion upon account closure',
+  'privacy.s7.title': '7. Your rights',
+  'privacy.s7.intro': 'In accordance with the GDPR, you have the following rights:',
+  'privacy.s7.access': '<strong>Right of access</strong>: obtain a copy of your data',
+  'privacy.s7.rectification': '<strong>Right of rectification</strong>: correct your data',
+  'privacy.s7.erasure': '<strong>Right of erasure</strong>: delete your account and all your data from the app (Profile → Delete my account)',
+  'privacy.s7.portability': '<strong>Right to data portability</strong>: receive your data in a structured format',
+  'privacy.s7.opposition': '<strong>Right to object</strong>: object to processing',
+  'privacy.s7.contact': 'To exercise your rights, contact us at: <a href="mailto:contact@micitracker.com">contact@micitracker.com</a>',
+  'privacy.s7.authority': 'You can also lodge a complaint with the <a href="https://ico.org.uk" target="_blank">ICO</a> (Information Commissioner\'s Office).',
 
   // Section 8
-  'privacy.s8.title': '8. Contact',
-  'privacy.s8.intro': 'For any questions regarding this policy or your personal data:',
+  'privacy.s8.title': '8. Security',
+  'privacy.s8.intro': 'We implement the following measures to protect your data:',
+  'privacy.s8.li1': 'Secure authentication (email/password, Google OAuth)',
+  'privacy.s8.li2': 'Per-user data isolation (Supabase Row Level Security)',
+  'privacy.s8.li3': 'Encrypted communications (HTTPS/TLS)',
+  'privacy.s8.li4': 'Permanent data deletion upon account closure',
+
+  // Section 9
+  'privacy.s9.title': '9. Contact',
+  'privacy.s9.intro': 'For any questions regarding this policy or your personal data:',
 };
