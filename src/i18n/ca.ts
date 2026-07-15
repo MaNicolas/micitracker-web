@@ -4,6 +4,7 @@ export default {
   'nav.label': 'Navegació',
   'nav.home': 'Inici',
   'nav.privacy': 'Privadesa',
+  'nav.terms': 'Condicions d\'ús',
   'lang.label': 'Idioma',
 
   // Home
@@ -192,4 +193,55 @@ export default {
   // Section 9
   'privacy.s9.title': '9. Contacte',
   'privacy.s9.intro': 'Per a qualsevol pregunta relacionada amb aquesta política o amb les seves dades personals:',
+
+  // Terms of Service (CGU)
+  'terms.title': 'Condicions d\'ús',
+  'terms.date': 'Darrera actualització: 15 de juliol de 2026',
+
+  // Section 1 — Objecte
+  'terms.s1.title': '1. Objecte',
+  'terms.s1.p1': 'MICI Tracker és una aplicació mòbil de diari de salut destinada a pacients amb malaltia inflamatòria intestinal (MII), com la malaltia de Crohn o la Colitis Ulcerosa. Permet fer un seguiment diari dels seus símptomes, la seva alimentació i els seus tractaments.',
+  'terms.s1.p2': 'MICI Tracker no és un dispositiu mèdic i no proporciona cap diagnòstic, consell mèdic ni recomanació terapèutica.',
+  'terms.s1.highlight': 'L\'aplicació no substitueix en cap cas una consulta mèdica. Consulti sempre el seu metge per a qualsevol decisió relativa a la seva salut.',
+
+  // Section 2 — Accés al servei
+  'terms.s2.title': '2. Accés al servei',
+  'terms.s2.p1': 'L\'ús de MICI Tracker requereix la creació d\'un compte mitjançant una adreça de correu electrònic o una connexió Google OAuth.',
+  'terms.s2.li1': 'El servei és actualment gratuït durant la fase beta.',
+  'terms.s2.li2': 'Un model de subscripció de pagament podrà establir-se en el futur.',
+  'terms.s2.li3': 'L\'editor es reserva el dret de modificar les tarifes amb un preavís raonable comunicat per correu electrònic i/o a l\'aplicació.',
+
+  // Section 3 — Responsabilitats de l'usuari
+  'terms.s3.title': '3. Responsabilitats de l\'usuari',
+  'terms.s3.intro': 'En utilitzar MICI Tracker, vostè es compromet a:',
+  'terms.s3.li1': 'Proporcionar informació exacta i actualitzada.',
+  'terms.s3.li2': 'No compartir les seves credencials d\'accés amb tercers.',
+  'terms.s3.li3': 'No utilitzar l\'aplicació amb fins il·legals o contraris a les presents condicions.',
+
+  // Section 4 — Limitació de responsabilitat
+  'terms.s4.title': '4. Limitació de responsabilitat',
+  'terms.s4.p1': 'L\'editor fa tot el possible per garantir el bon funcionament del servei, però no pot garantir una disponibilitat contínua i ininterrompuda.',
+  'terms.s4.li1': 'L\'aplicació no proporciona cap diagnòstic ni consell mèdic.',
+  'terms.s4.li2': 'L\'editor no és responsable de les decisions preses per l\'usuari sobre la base de les dades registrades a l\'aplicació.',
+  'terms.s4.li3': 'Poden produir-se interrupcions del servei per manteniment, actualització o en cas de força major.',
+
+  // Section 5 — Propietat intel·lectual
+  'terms.s5.title': '5. Propietat intel·lectual',
+  'terms.s5.p1': 'Tot el contingut de l\'aplicació (codi font, disseny, textos, imatges) és propietat exclusiva de <strong>Nicolas MA</strong> i està protegit pel dret de propietat intel·lectual.',
+  'terms.s5.p2': 'L\'usuari conserva la plena propietat de les seves dades personals introduïdes a l\'aplicació.',
+
+  // Section 6 — Resolució
+  'terms.s6.title': '6. Resolució',
+  'terms.s6.p1': 'Pot eliminar el seu compte en qualsevol moment des de l\'aplicació, a <strong>Compte → Privadesa → Eliminar el meu compte</strong>. Aquesta acció és definitiva i comporta l\'eliminació de totes les seves dades.',
+  'terms.s6.p2': 'L\'editor es reserva el dret de suspendre o eliminar un compte en cas d\'ús abusiu o contrari a les presents condicions, prèvia notificació a l\'usuari.',
+
+  // Section 7 — Modificacions de les condicions
+  'terms.s7.title': '7. Modificacions de les condicions d\'ús',
+  'terms.s7.p1': 'Les presents condicions d\'ús poden ser modificades en qualsevol moment. Els usuaris seran informats de qualsevol modificació per correu electrònic o mitjançant una notificació a l\'aplicació.',
+  'terms.s7.p2': 'L\'ús continuat de l\'aplicació després de la notificació de les modificacions implica l\'acceptació de les noves condicions.',
+
+  // Section 8 — Dret aplicable
+  'terms.s8.title': '8. Dret aplicable',
+  'terms.s8.p1': 'Les presents condicions es regeixen pel dret espanyol. Qualsevol litigi relatiu a l\'ús de MICI Tracker se sotmetrà a la jurisdicció dels tribunals de Barcelona, Espanya.',
+  'terms.s8.p2': 'L\'aplicació compleix amb el Reglament General de Protecció de Dades (RGPD). Per a més informació, consulti la nostra <a href="/privacy">política de privadesa</a>.',
 };

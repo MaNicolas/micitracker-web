@@ -4,6 +4,7 @@ export default {
   'nav.label': 'Navigation',
   'nav.home': 'Home',
   'nav.privacy': 'Privacy',
+  'nav.terms': 'Terms of Service',
   'lang.label': 'Language',
 
   // Home
@@ -192,4 +193,55 @@ export default {
   // Section 9
   'privacy.s9.title': '9. Contact',
   'privacy.s9.intro': 'For any questions regarding this policy or your personal data:',
+
+  // Terms of Service
+  'terms.title': 'Terms of Service',
+  'terms.date': 'Last updated: 15 July 2026',
+
+  // Section 1 — Purpose
+  'terms.s1.title': '1. Purpose',
+  'terms.s1.p1': 'MICI Tracker is a mobile health journal app designed for patients with Inflammatory Bowel Disease (IBD), such as Crohn\'s disease or Ulcerative Colitis. It allows you to track your symptoms, diet and treatments on a daily basis.',
+  'terms.s1.p2': 'MICI Tracker is not a medical device and does not provide any diagnosis, medical advice or therapeutic recommendation.',
+  'terms.s1.highlight': 'The app does not replace a medical consultation under any circumstances. Always consult your doctor for any decision relating to your health.',
+
+  // Section 2 — Access to the service
+  'terms.s2.title': '2. Access to the service',
+  'terms.s2.p1': 'Using MICI Tracker requires creating an account via an email address or Google OAuth sign-in.',
+  'terms.s2.li1': 'The service is currently free during the beta phase.',
+  'terms.s2.li2': 'A paid subscription model may be introduced in the future.',
+  'terms.s2.li3': 'The publisher reserves the right to change pricing with reasonable notice communicated by email and/or within the app.',
+
+  // Section 3 — User responsibilities
+  'terms.s3.title': '3. User responsibilities',
+  'terms.s3.intro': 'By using MICI Tracker, you agree to:',
+  'terms.s3.li1': 'Provide accurate and up-to-date information.',
+  'terms.s3.li2': 'Not share your login credentials with third parties.',
+  'terms.s3.li3': 'Not use the app for illegal purposes or in a manner contrary to these terms.',
+
+  // Section 4 — Limitation of liability
+  'terms.s4.title': '4. Limitation of liability',
+  'terms.s4.p1': 'The publisher makes every effort to ensure the proper functioning of the service but cannot guarantee continuous and uninterrupted availability.',
+  'terms.s4.li1': 'The app does not provide any diagnosis or medical advice.',
+  'terms.s4.li2': 'The publisher is not liable for decisions made by the user based on data recorded in the app.',
+  'terms.s4.li3': 'Service interruptions may occur due to maintenance, updates or force majeure.',
+
+  // Section 5 — Intellectual property
+  'terms.s5.title': '5. Intellectual property',
+  'terms.s5.p1': 'All content within the app (source code, design, text, images) is the exclusive property of <strong>Nicolas MA</strong> and is protected by intellectual property law.',
+  'terms.s5.p2': 'The user retains full ownership of their personal data entered in the app.',
+
+  // Section 6 — Termination
+  'terms.s6.title': '6. Termination',
+  'terms.s6.p1': 'You can delete your account at any time from the app, under <strong>Account → Privacy → Delete my account</strong>. This action is permanent and results in the deletion of all your data.',
+  'terms.s6.p2': 'The publisher reserves the right to suspend or delete an account in the event of misuse or breach of these terms, after notifying the user.',
+
+  // Section 7 — Changes to the terms
+  'terms.s7.title': '7. Changes to the Terms of Service',
+  'terms.s7.p1': 'These Terms of Service may be updated at any time. Users will be notified of any changes by email or through a notification within the app.',
+  'terms.s7.p2': 'Continued use of the app after notification of changes constitutes acceptance of the new terms.',
+
+  // Section 8 — Governing law
+  'terms.s8.title': '8. Governing law',
+  'terms.s8.p1': 'These terms are governed by Spanish law. Any dispute relating to the use of MICI Tracker shall be subject to the jurisdiction of the courts of Barcelona, Spain.',
+  'terms.s8.p2': 'The app complies with the General Data Protection Regulation (GDPR). For more information, see our <a href="/privacy">privacy policy</a>.',
 };

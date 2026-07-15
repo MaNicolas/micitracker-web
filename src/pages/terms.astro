@@ -1,0 +1,120 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { t } from '../i18n/index';
+---
+
+<Layout title="Conditions d'utilisation">
+  <style>
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #2D6A4F;
+      margin-bottom: 6px;
+    }
+    .date {
+      font-size: 13px;
+      color: #9CA3AF;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #2D6A4F;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #D8F3DC;
+    }
+    p { font-size: 16px; line-height: 1.7; color: #1A1A2E; margin-bottom: 10px; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    li { font-size: 16px; line-height: 1.7; color: #1A1A2E; margin-bottom: 4px; }
+    a { color: #2D6A4F; }
+    .highlight {
+      background: #D8F3DC;
+      border-left: 4px solid #2D6A4F;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+
+  <h1 data-i18n="terms.title">{t('fr', 'terms.title')}</h1>
+  <p class="date" data-i18n="terms.date">{t('fr', 'terms.date')}</p>
+
+  <!-- Section 1 — Objet -->
+  <div class="card">
+    <h2 data-i18n="terms.s1.title">{t('fr', 'terms.s1.title')}</h2>
+    <p data-i18n="terms.s1.p1" set:html={t('fr', 'terms.s1.p1')} />
+    <p data-i18n="terms.s1.p2">{t('fr', 'terms.s1.p2')}</p>
+    <div class="highlight" data-i18n="terms.s1.highlight">{t('fr', 'terms.s1.highlight')}</div>
+  </div>
+
+  <!-- Section 2 — Accès au service -->
+  <div class="card">
+    <h2 data-i18n="terms.s2.title">{t('fr', 'terms.s2.title')}</h2>
+    <p data-i18n="terms.s2.p1">{t('fr', 'terms.s2.p1')}</p>
+    <ul>
+      <li data-i18n="terms.s2.li1">{t('fr', 'terms.s2.li1')}</li>
+      <li data-i18n="terms.s2.li2">{t('fr', 'terms.s2.li2')}</li>
+      <li data-i18n="terms.s2.li3">{t('fr', 'terms.s2.li3')}</li>
+    </ul>
+  </div>
+
+  <!-- Section 3 — Responsabilités de l'utilisateur -->
+  <div class="card">
+    <h2 data-i18n="terms.s3.title">{t('fr', 'terms.s3.title')}</h2>
+    <p data-i18n="terms.s3.intro">{t('fr', 'terms.s3.intro')}</p>
+    <ul>
+      <li data-i18n="terms.s3.li1">{t('fr', 'terms.s3.li1')}</li>
+      <li data-i18n="terms.s3.li2">{t('fr', 'terms.s3.li2')}</li>
+      <li data-i18n="terms.s3.li3">{t('fr', 'terms.s3.li3')}</li>
+    </ul>
+  </div>
+
+  <!-- Section 4 — Limitation de responsabilité -->
+  <div class="card">
+    <h2 data-i18n="terms.s4.title">{t('fr', 'terms.s4.title')}</h2>
+    <p data-i18n="terms.s4.p1">{t('fr', 'terms.s4.p1')}</p>
+    <ul>
+      <li data-i18n="terms.s4.li1">{t('fr', 'terms.s4.li1')}</li>
+      <li data-i18n="terms.s4.li2">{t('fr', 'terms.s4.li2')}</li>
+      <li data-i18n="terms.s4.li3">{t('fr', 'terms.s4.li3')}</li>
+    </ul>
+  </div>
+
+  <!-- Section 5 — Propriété intellectuelle -->
+  <div class="card">
+    <h2 data-i18n="terms.s5.title">{t('fr', 'terms.s5.title')}</h2>
+    <p data-i18n="terms.s5.p1" set:html={t('fr', 'terms.s5.p1')} />
+    <p data-i18n="terms.s5.p2">{t('fr', 'terms.s5.p2')}</p>
+  </div>
+
+  <!-- Section 6 — Résiliation -->
+  <div class="card">
+    <h2 data-i18n="terms.s6.title">{t('fr', 'terms.s6.title')}</h2>
+    <p data-i18n="terms.s6.p1" set:html={t('fr', 'terms.s6.p1')} />
+    <p data-i18n="terms.s6.p2">{t('fr', 'terms.s6.p2')}</p>
+  </div>
+
+  <!-- Section 7 — Modifications des CGU -->
+  <div class="card">
+    <h2 data-i18n="terms.s7.title">{t('fr', 'terms.s7.title')}</h2>
+    <p data-i18n="terms.s7.p1">{t('fr', 'terms.s7.p1')}</p>
+    <p data-i18n="terms.s7.p2">{t('fr', 'terms.s7.p2')}</p>
+  </div>
+
+  <!-- Section 8 — Droit applicable -->
+  <div class="card">
+    <h2 data-i18n="terms.s8.title">{t('fr', 'terms.s8.title')}</h2>
+    <p data-i18n="terms.s8.p1">{t('fr', 'terms.s8.p1')}</p>
+    <p data-i18n="terms.s8.p2" set:html={t('fr', 'terms.s8.p2')} />
+  </div>
+</Layout>

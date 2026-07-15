@@ -4,6 +4,7 @@ export default {
   'nav.label': 'Navegación',
   'nav.home': 'Inicio',
   'nav.privacy': 'Privacidad',
+  'nav.terms': 'Condiciones de uso',
   'lang.label': 'Idioma',
 
   // Home
@@ -192,4 +193,55 @@ export default {
   // Section 9
   'privacy.s9.title': '9. Contacto',
   'privacy.s9.intro': 'Para cualquier pregunta relacionada con esta política o con sus datos personales:',
+
+  // Terms of Service (CGU)
+  'terms.title': 'Condiciones de uso',
+  'terms.date': 'Última actualización: 15 de julio de 2026',
+
+  // Section 1 — Objeto
+  'terms.s1.title': '1. Objeto',
+  'terms.s1.p1': 'MICI Tracker es una aplicación móvil de diario de salud destinada a pacientes con Enfermedades Inflamatorias Crónicas del Intestino (EII), como la enfermedad de Crohn o la Colitis Ulcerosa. Permite hacer un seguimiento diario de sus síntomas, su alimentación y sus tratamientos.',
+  'terms.s1.p2': 'MICI Tracker no es un dispositivo médico y no proporciona ningún diagnóstico, consejo médico ni recomendación terapéutica.',
+  'terms.s1.highlight': 'La aplicación no sustituye en ningún caso una consulta médica. Consulte siempre a su médico para cualquier decisión relativa a su salud.',
+
+  // Section 2 — Acceso al servicio
+  'terms.s2.title': '2. Acceso al servicio',
+  'terms.s2.p1': 'El uso de MICI Tracker requiere la creación de una cuenta mediante una dirección de correo electrónico o una conexión Google OAuth.',
+  'terms.s2.li1': 'El servicio es actualmente gratuito durante la fase beta.',
+  'terms.s2.li2': 'Un modelo de suscripción de pago podrá establecerse en el futuro.',
+  'terms.s2.li3': 'El editor se reserva el derecho de modificar las tarifas con un preaviso razonable comunicado por correo electrónico y/o en la aplicación.',
+
+  // Section 3 — Responsabilidades del usuario
+  'terms.s3.title': '3. Responsabilidades del usuario',
+  'terms.s3.intro': 'Al utilizar MICI Tracker, usted se compromete a:',
+  'terms.s3.li1': 'Proporcionar información exacta y actualizada.',
+  'terms.s3.li2': 'No compartir sus credenciales de acceso con terceros.',
+  'terms.s3.li3': 'No utilizar la aplicación con fines ilegales o contrarios a las presentes condiciones.',
+
+  // Section 4 — Limitación de responsabilidad
+  'terms.s4.title': '4. Limitación de responsabilidad',
+  'terms.s4.p1': 'El editor hace todo lo posible para garantizar el buen funcionamiento del servicio, pero no puede garantizar una disponibilidad continua e ininterrumpida.',
+  'terms.s4.li1': 'La aplicación no proporciona ningún diagnóstico ni consejo médico.',
+  'terms.s4.li2': 'El editor no es responsable de las decisiones tomadas por el usuario sobre la base de los datos registrados en la aplicación.',
+  'terms.s4.li3': 'Pueden producirse interrupciones del servicio por mantenimiento, actualización o en caso de fuerza mayor.',
+
+  // Section 5 — Propiedad intelectual
+  'terms.s5.title': '5. Propiedad intelectual',
+  'terms.s5.p1': 'Todo el contenido de la aplicación (código fuente, diseño, textos, imágenes) es propiedad exclusiva de <strong>Nicolas MA</strong> y está protegido por el derecho de propiedad intelectual.',
+  'terms.s5.p2': 'El usuario conserva la plena propiedad de sus datos personales introducidos en la aplicación.',
+
+  // Section 6 — Resolución
+  'terms.s6.title': '6. Resolución',
+  'terms.s6.p1': 'Puede eliminar su cuenta en cualquier momento desde la aplicación, en <strong>Cuenta → Privacidad → Eliminar mi cuenta</strong>. Esta acción es definitiva y conlleva la eliminación de todos sus datos.',
+  'terms.s6.p2': 'El editor se reserva el derecho de suspender o eliminar una cuenta en caso de uso abusivo o contrario a las presentes condiciones, previa notificación al usuario.',
+
+  // Section 7 — Modificaciones de las condiciones
+  'terms.s7.title': '7. Modificaciones de las condiciones de uso',
+  'terms.s7.p1': 'Las presentes condiciones de uso pueden ser modificadas en cualquier momento. Los usuarios serán informados de cualquier modificación por correo electrónico o mediante una notificación en la aplicación.',
+  'terms.s7.p2': 'El uso continuado de la aplicación tras la notificación de las modificaciones implica la aceptación de las nuevas condiciones.',
+
+  // Section 8 — Derecho aplicable
+  'terms.s8.title': '8. Derecho aplicable',
+  'terms.s8.p1': 'Las presentes condiciones se rigen por el derecho español. Cualquier litigio relativo al uso de MICI Tracker se someterá a la jurisdicción de los tribunales de Barcelona, España.',
+  'terms.s8.p2': 'La aplicación cumple con el Reglamento General de Protección de Datos (RGPD). Para más información, consulte nuestra <a href="/privacy">política de privacidad</a>.',
 };
